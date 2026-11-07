@@ -281,6 +281,9 @@
     details p { margin: -4px 35px 20px 0; color: var(--muted); font-size: 14px; }
     .footer { padding: 25px 0 33px; border-top: 1px solid var(--line); color: #8995aa; font-size: 12px; }
     .footer-inner { display: flex; justify-content: space-between; gap: 20px; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+    .footer-links a { color: inherit; text-decoration: none; }
+    .footer-links a:hover { color: var(--mint); }
 
     @media (max-width: 850px) {
       .hero { grid-template-columns: 1fr; gap: 56px; padding-top: 67px; }
@@ -527,7 +530,12 @@
     <div class="wrap footer-inner">
       <span>© 2026 Old Launchpad</span>
       <span>Ein kleines Launchpad für deinen Mac.</span>
-      <a href="#faq">Fragen? Siehe FAQ ↑</a>
+      <span class="footer-links">
+        <a href="impressum.html">Impressum (Entwurf)</a>
+        <a href="datenschutz.html">Datenschutz (Entwurf)</a>
+        <a href="verbraucherinformationen.html">Verbraucherinfos (Entwurf)</a>
+        <a href="lizenzbedingungen.html">Lizenzbedingungen (Entwurf)</a>
+      </span>
     </div>
   </footer>
   <script>
