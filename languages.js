@@ -648,6 +648,9 @@ function applyLanguage(language = activeLanguage) {
     if (translation !== undefined) element.setAttribute(attribute, translation);
   });
 
+  document.querySelectorAll('.translation-notice').forEach((element) => {
+    element.hidden = activeLanguage === 'de';
+  });
   if (languageSwitcher) languageSwitcher.value = activeLanguage;
 }
 

@@ -1,13 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="de">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#090d18">
-  <meta name="description" content="Old Launchpad bringt das vertraute App-Raster zurück auf deinen Mac. 30 Tage kostenlos testen, danach einmalig 8,99 €.">
-  <title>Old Launchpad — Deine Apps. Wieder auf einen Blick.</title>
-  <link rel="icon" type="image/png" href="build/OldLaunchpad.iconset/icon_32x32.png">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#090d18" name="theme-color"/>
+<meta content="Old Launchpad bringt das vertraute App-Raster zurück auf deinen Mac. 30 Tage kostenlos testen, danach einmalig 8,99 €." data-i18n-attr="content:metaDescription" name="description"/>
+<title data-i18n="metaTitle">Old Launchpad — Deine Apps. Wieder auf einen Blick.</title>
+<link href="build/OldLaunchpad.iconset/icon_32x32.png" rel="icon" type="image/png"/>
+<style>
     :root {
       color-scheme: dark;
       --bg: #090d18;
@@ -338,223 +339,219 @@
       .app { animation: none !important; opacity: 1; filter: none; transform: none; }
       .demo-folder { opacity: 1; transform: none; }
     }
+  
+    /* Sprachumschalter (Ergänzung) */
+    .topbar .language-control { margin-left:12px; }
+    #language-switcher { background:#172238; color:#f5f7ff; border:1px solid rgba(205,218,255,.28); border-radius:10px; padding:9px 12px; font:inherit; font-size:13px; cursor:pointer; }
+    @media(max-width:600px) { .topbar .language-control { margin-left:auto; } #language-switcher { max-width:135px; padding:7px 5px; } }
   </style>
 </head>
 <body>
-  <header class="wrap topbar">
-    <a class="brand" href="#" aria-label="Old Launchpad Startseite">
-      <img src="build/OldLaunchpad.iconset/icon_32x32.png" alt="">
-      <span>Old Launchpad</span>
-    </a>
-    <button class="mobile-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">☰</button>
-    <nav class="nav" id="main-nav" aria-label="Hauptnavigation">
-      <a href="#vorteile">Vorteile</a>
-      <a href="#so-gehts">So funktioniert's</a>
-      <a href="#probeversion">Probeversion</a>
-      <a href="#kaufen">Preis</a>
-      <a class="button small" href="https://old-launchpad.lemonsqueezy.com/checkout/buy/937768e9-7a15-4015-b7bd-3229686c771f">Jetzt kaufen · 8,99 € <span aria-hidden="true">↗</span></a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="wrap hero">
-      <div>
-        <div class="eyebrow">Das vertraute Launchpad ist zurück</div>
-        <h1>Deine Apps.<br><span>Wieder auf einen Blick.</span></h1>
-        <p class="hero-copy">Ein aufgeräumtes Raster. Deine Lieblings-Apps sofort griffbereit. Old Launchpad bringt das einfache, vertraute App-Launchpad zurück auf deinen Mac.</p>
-        <div class="hero-actions">
-          <a class="button" href="https://old-launchpad.lemonsqueezy.com/checkout/buy/937768e9-7a15-4015-b7bd-3229686c771f">Jetzt kaufen · 8,99 € <span aria-hidden="true">→</span></a>
-          <a class="button secondary" href="https://github.com/Shadow3561/old-launchpad/releases/latest/download/Old-Launchpad-30-Tage-Test.zip">30 Tage kostenlos testen <span aria-hidden="true">↓</span></a>
-        </div>
-        <p class="fineprint">30 Tage gratis <span>·</span> danach einmalig 8,99 € <span>·</span> kein Abo</p>
-      </div>
-
-      <div class="preview-area" aria-label="Vorschau des Old Launchpad App-Rasters">
-        <div class="glow"></div>
-        <div class="launchpad">
-          <div class="window-bar">
-            <span class="traffic"><i></i><i></i><i></i></span>
-            <span class="window-title">Old Launchpad</span>
-            <span aria-hidden="true">⚙</span>
-          </div>
-          <div class="search" aria-hidden="true"><span>⌕</span><span class="search-placeholder">Apps suchen</span><span class="search-query">Fotos</span></div>
-          <div class="app-grid">
-            <div class="app"><span class="app-icon" style="--c1:#a9d8ff;--c2:#3387e8">✉</span><span class="app-name">Mail</span></div>
-            <div class="app demo-match"><span class="app-icon" style="--c1:#b7aaff;--c2:#6447cc">✦</span><span class="app-name">Fotos</span></div>
-            <div class="app"><span class="app-icon" style="--c1:#ffc3b1;--c2:#e75f47">♫</span><span class="app-name">Musik</span></div>
-            <div class="app"><span class="app-icon" style="--c1:#b6edda;--c2:#34a77e">◉</span><span class="app-name">Safari</span></div>
-            <div class="app"><span class="app-icon" style="--c1:#c7e9ff;--c2:#528bd2">▦</span><span class="app-name">Kalender</span></div>
-            <div class="app"><span class="app-icon" style="--c1:#ffdf91;--c2:#e89b32">☀</span><span class="app-name">Notizen</span></div>
-            <div class="app"><span class="app-icon" style="--c1:#ffc0d0;--c2:#dd4e82">▣</span><span class="app-name">Nachrichten</span></div>
-            <div class="app"><span class="app-icon" style="--c1:#d3d9e8;--c2:#70809f">⌘</span><span class="app-name">Einstellungen</span></div>
-            <div class="app"><span class="app-icon" style="--c1:#f6cb83;--c2:#cb7b37">◷</span><span class="app-name">Uhr</span></div>
-            <div class="app"><span class="app-icon" style="--c1:#b2e2f5;--c2:#4687bc">☁</span><span class="app-name">Wetter</span></div>
-            <div class="app"><span class="app-icon" style="--c1:#ddaaff;--c2:#874db9">⌁</span><span class="app-name">Podcasts</span></div>
-            <div class="app demo-folder"><span class="app-icon"><span class="folder-preview" aria-hidden="true"><i style="--tile-a:#d9b7ff;--tile-b:#8c62c6">✦</i><i style="--tile-a:#ffc2cb;--tile-b:#d8617b">▣</i><i style="--tile-a:#a9d8ff;--tile-b:#4985d1">♫</i><i style="--tile-a:#b6edda;--tile-b:#429979">⌘</i></span></span><span class="app-name">Design</span></div>
-          </div>
-          <div class="page-dots"><i></i><i></i><i></i></div>
-          <div class="demo-caption" aria-hidden="true">
-            <span>Alle Apps übersichtlich sortiert</span>
-            <span>Suche findet deine App sofort</span>
-            <span>Ein Klick – und die App startet</span>
-            <span>Apps in eigenen Ordnern gruppieren</span>
-          </div>
-        </div>
-        <div class="floating-note"><span class="note-icon">⌕</span><span><b>Alles sofort finden</b><span>Tippen. Finden. Öffnen.</span></span></div>
-      </div>
-    </section>
-
-    <div class="wrap trust-row" aria-label="Produktmerkmale">
-      <span><b class="check">✓</b> Native macOS-App</span>
-      <span><b class="check">✓</b> Deine Apps, dein Raster</span>
-      <span><b class="check">✓</b> Einmal zahlen, dauerhaft nutzen</span>
-    </div>
-
-    <section class="wrap content" id="vorteile">
-      <div class="section-heading">
-        <div class="eyebrow">Weniger suchen, mehr starten</div>
-        <h2>Ein Launchpad, das sich<br>nach deinem Mac anfühlt.</h2>
-        <p>Vertraute Bedienung, liebevolle Details und genau die Übersicht, die im Alltag gefehlt hat.</p>
-      </div>
-      <div class="features">
-        <article class="feature">
-          <div class="feature-icon">⌕</div>
-          <h3>Sofort finden</h3>
-          <p>Suche deine installierten Programme und starte sie direkt – ohne dich durch Ordner zu klicken.</p>
-        </article>
-        <article class="feature">
-          <div class="feature-icon">⠿</div>
-          <h3>Ordne es, wie du willst</h3>
-          <p>Apps ziehen, sortieren und in Ordner gruppieren. Deine Anordnung bleibt auch nach dem Neustart erhalten.</p>
-        </article>
-        <article class="feature">
-          <div class="feature-icon">◫</div>
-          <h3>Dein Look, deine Größe</h3>
-          <p>Wähle Symbolgröße, Hintergrund, Transparenz und Rasterreihen passend zu deinem Bildschirm.</p>
-        </article>
-        <article class="feature">
-          <div class="feature-icon">↔</div>
-          <h3>Seiten, die mitdenken</h3>
-          <p>Wechsle per Wischgeste zwischen Seiten. Beim Ziehen kannst du Apps sogar direkt auf die nächste Seite bewegen.</p>
-        </article>
-        <article class="feature">
-          <div class="feature-icon">✧</div>
-          <h3>Mit macOS im Einklang</h3>
-          <p>Originale App-Symbole, native Bedienung und eine Animation, die sich an deinen Dock-Effekt anpasst.</p>
-        </article>
-        <article class="feature">
-          <div class="feature-icon">⌘</div>
-          <h3>Einfach startklar</h3>
-          <p>Eine schlanke native App für macOS 13 oder neuer – ohne zusätzliche Pakete oder komplizierte Einrichtung.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="wrap content" id="so-gehts">
-      <div class="how">
-        <div>
-          <div class="eyebrow">In wenigen Augenblicken</div>
-          <h2>Installieren.<br>Öffnen. Loslegen.</h2>
-          <p>Deine installierten Apps erscheinen direkt im Launchpad. Teste alle Funktionen 30 Tage lang und entscheide danach, ob du es für einmalig 8,99 € dauerhaft freischalten möchtest.</p>
-          <a class="button secondary" href="https://github.com/Shadow3561/old-launchpad/releases/latest/download/Old-Launchpad-30-Tage-Test.zip">Probeversion herunterladen <span aria-hidden="true">↓</span></a>
-        </div>
-        <div class="steps">
-          <div class="step"><span class="step-number">01</span><span><b>Herunterladen</b><span>Lade Old Launchpad für deinen Mac herunter.</span></span></div>
-          <div class="step"><span class="step-number">02</span><span><b>Apps entdecken</b><span>Deine installierten Programme erscheinen übersichtlich im Raster.</span></span></div>
-          <div class="step"><span class="step-number">03</span><span><b>Dein Launchpad gestalten</b><span>Ordne Apps, erstelle Ordner und passe das Erscheinungsbild an.</span></span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="wrap content pricing" id="kaufen">
-      <div class="pricing-copy">
-        <div class="eyebrow">Ein fairer Preis. Kein Abo.</div>
-        <h2>30 Tage ausprobieren.<br>Dann entscheiden.</h2>
-        <p>Teste alle Funktionen 30 Tage lang kostenlos. Danach kannst du Old Launchpad mit einer einmaligen Zahlung von 8,99 € dauerhaft freischalten.</p>
-      </div>
-      <div class="price-card">
-        <div class="price-label">Old Launchpad · Einzellizenz</div>
-        <div class="price">8,99 €</div>
-        <div class="price-detail">einmalig · kein Abo</div>
-        <ul class="price-list">
-          <li><span class="check">✓</span> 30 Tage kostenlos testen</li>
-          <li><span class="check">✓</span> Alle Funktionen inklusive</li>
-          <li><span class="check">✓</span> Einmal zahlen, dauerhaft nutzen</li>
-        </ul>
-        <a class="button" href="https://old-launchpad.lemonsqueezy.com/checkout/buy/937768e9-7a15-4015-b7bd-3229686c771f">Jetzt kaufen <span aria-hidden="true">→</span></a>
-        <p class="checkout-note">Einmalige Zahlung · Kein Abo</p>
-        <a class="download-link" href="https://github.com/Shadow3561/old-launchpad/releases/latest/download/Old-Launchpad-30-Tage-Test.zip">Oder erst 30 Tage kostenlos testen ↓</a>
-      </div>
-    </section>
-
-    <section class="wrap content" id="faq">
-      <div class="section-heading">
-        <div class="eyebrow">Gut zu wissen</div>
-        <h2>Häufige Fragen</h2>
-      </div>
-      <div class="faq">
-        <details>
-          <summary>Welche macOS-Version brauche ich?</summary>
-          <p>Old Launchpad benötigt macOS 13 oder neuer.</p>
-        </details>
-        <details>
-          <summary>Wie funktioniert die Probeversion?</summary>
-          <p>Die Probeversion enthält alle Funktionen und kann 30 Tage kostenlos genutzt werden. Die Frist beginnt beim ersten Start der App. Danach kannst du sie mit einer einmaligen Zahlung von 8,99 € dauerhaft freischalten.</p>
-        </details>
-        <details>
-          <summary>Wo finde ich meine installierten Apps?</summary>
-          <p>Old Launchpad liest Programme aus den üblichen macOS-Programmordnern und zeigt sie in einem durchsuchbaren Raster an.</p>
-        </details>
-        <details>
-          <summary>Ist ein Abo erforderlich?</summary>
-          <p>Nein. Die Lizenz kostet einmalig 8,99 € – es gibt kein Abo.</p>
-        </details>
-      </div>
-    </section>
-
-    <section class="wrap content" id="probeversion" style="padding-top:0">
-      <div class="section-heading">
-        <div class="eyebrow">30 Tage kostenlos ausprobieren</div>
-        <h2>Erst testen.<br>Dann in Ruhe entscheiden.</h2>
-        <p>Alle Funktionen inklusive. Nach 30 Tagen kannst du Old Launchpad für einmalig 8,99 € dauerhaft freischalten.</p>
-        <div style="margin-top:24px">
-          <a class="button" href="https://github.com/Shadow3561/old-launchpad/releases/latest/download/Old-Launchpad-30-Tage-Test.zip">Probeversion herunterladen <span aria-hidden="true">↓</span></a>
-        </div>
-        <p class="fineprint">macOS 13 oder neuer <span>·</span> Keine Zahlungsdaten für den Test</p>
-        <p><a class="download-link" href="https://old-launchpad.lemonsqueezy.com/checkout/buy/937768e9-7a15-4015-b7bd-3229686c771f">Oder direkt kaufen · einmalig 8,99 €</a></p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="wrap footer-inner">
-      <span>© 2026 Old Launchpad</span>
-      <span>Ein kleines Launchpad für deinen Mac.</span>
-      <span class="footer-links">
-        <a href="impressum.html">Impressum</a>
-        <a href="datenschutz.html">Datenschutz</a>
-        <a href="verbraucherinformationen.html">Verbraucherinformationen</a>
-        <a href="lizenzbedingungen.html">Lizenzbedingungen</a>
-      </span>
-    </div>
-  </footer>
-  <script>
+<header class="wrap topbar">
+<a aria-label="Old Launchpad Startseite" class="brand" data-i18n-attr="aria-label:homeLabel" href="#">
+<img alt="" src="build/OldLaunchpad.iconset/icon_32x32.png"/>
+<span>Old Launchpad</span>
+</a>
+<button aria-controls="main-nav" aria-expanded="false" aria-label="Menü öffnen" class="mobile-toggle" data-i18n-attr="aria-label:menuOpen" type="button">☰</button>
+<nav aria-label="Hauptnavigation" class="nav" data-i18n-attr="aria-label:mainNavigation" id="main-nav">
+<a data-i18n="navBenefits" href="#vorteile">Vorteile</a>
+<a data-i18n="navHow" href="#so-gehts">So funktioniert's</a>
+<a data-i18n="navTrial" href="#probeversion">Probeversion</a>
+<a data-i18n="navPrice" href="#kaufen">Preis</a>
+<a class="button small" data-i18n="buyTop" href="https://old-launchpad.lemonsqueezy.com/checkout/buy/937768e9-7a15-4015-b7bd-3229686c771f">Jetzt kaufen · 8,99 € <span aria-hidden="true">↗</span></a>
+</nav>
+<div class="language-control"><select aria-label="Sprache auswählen" data-i18n-attr="aria-label:languageLabel" id="language-switcher"><option value="de">🇩🇪 Deutsch</option><option value="en">🇬🇧 English</option><option value="fr">🇫🇷 Français</option><option value="es">🇪🇸 Español</option></select></div></header>
+<main>
+<section class="wrap hero">
+<div>
+<div class="eyebrow" data-i18n="heroEyebrow">Das vertraute Launchpad ist zurück</div>
+<h1 data-i18n="heroTitle">Deine Apps.<br/><span>Wieder auf einen Blick.</span></h1>
+<p class="hero-copy" data-i18n="heroCopy">Ein aufgeräumtes Raster. Deine Lieblings-Apps sofort griffbereit. Old Launchpad bringt das einfache, vertraute App-Launchpad zurück auf deinen Mac.</p>
+<div class="hero-actions">
+<a class="button" data-i18n="buyHero" href="https://old-launchpad.lemonsqueezy.com/checkout/buy/937768e9-7a15-4015-b7bd-3229686c771f">Jetzt kaufen · 8,99 € <span aria-hidden="true">→</span></a>
+<a class="button secondary" data-i18n="tryHero" href="https://github.com/Shadow3561/old-launchpad/releases/latest/download/Old-Launchpad-30-Tage-Test.zip">30 Tage kostenlos testen <span aria-hidden="true">↓</span></a>
+</div>
+<p class="fineprint" data-i18n="heroFineprint">30 Tage gratis <span>·</span> danach einmalig 8,99 € <span>·</span> kein Abo</p>
+</div>
+<div aria-label="Vorschau des Old Launchpad App-Rasters" class="preview-area" data-i18n-attr="aria-label:previewLabel">
+<div class="glow"></div>
+<div class="launchpad">
+<div class="window-bar">
+<span class="traffic"><i></i><i></i><i></i></span>
+<span class="window-title">Old Launchpad</span>
+<span aria-hidden="true">⚙</span>
+</div>
+<div aria-hidden="true" class="search"><span>⌕</span><span class="search-placeholder" data-i18n="demoSearch">Apps suchen</span><span class="search-query" data-i18n="demoQuery">Fotos</span></div>
+<div class="app-grid">
+<div class="app"><span class="app-icon" style="--c1:#a9d8ff;--c2:#3387e8">✉</span><span class="app-name" data-i18n="appMail">Mail</span></div>
+<div class="app demo-match"><span class="app-icon" style="--c1:#b7aaff;--c2:#6447cc">✦</span><span class="app-name" data-i18n="demoQuery">Fotos</span></div>
+<div class="app"><span class="app-icon" style="--c1:#ffc3b1;--c2:#e75f47">♫</span><span class="app-name" data-i18n="appMusic">Musik</span></div>
+<div class="app"><span class="app-icon" style="--c1:#b6edda;--c2:#34a77e">◉</span><span class="app-name">Safari</span></div>
+<div class="app"><span class="app-icon" style="--c1:#c7e9ff;--c2:#528bd2">▦</span><span class="app-name" data-i18n="appCalendar">Kalender</span></div>
+<div class="app"><span class="app-icon" style="--c1:#ffdf91;--c2:#e89b32">☀</span><span class="app-name" data-i18n="appNotes">Notizen</span></div>
+<div class="app"><span class="app-icon" style="--c1:#ffc0d0;--c2:#dd4e82">▣</span><span class="app-name" data-i18n="appMessages">Nachrichten</span></div>
+<div class="app"><span class="app-icon" style="--c1:#d3d9e8;--c2:#70809f">⌘</span><span class="app-name" data-i18n="appSettings">Einstellungen</span></div>
+<div class="app"><span class="app-icon" style="--c1:#f6cb83;--c2:#cb7b37">◷</span><span class="app-name" data-i18n="appClock">Uhr</span></div>
+<div class="app"><span class="app-icon" style="--c1:#b2e2f5;--c2:#4687bc">☁</span><span class="app-name" data-i18n="appWeather">Wetter</span></div>
+<div class="app"><span class="app-icon" style="--c1:#ddaaff;--c2:#874db9">⌁</span><span class="app-name" data-i18n="appPodcasts">Podcasts</span></div>
+<div class="app demo-folder"><span class="app-icon"><span aria-hidden="true" class="folder-preview"><i style="--tile-a:#d9b7ff;--tile-b:#8c62c6">✦</i><i style="--tile-a:#ffc2cb;--tile-b:#d8617b">▣</i><i style="--tile-a:#a9d8ff;--tile-b:#4985d1">♫</i><i style="--tile-a:#b6edda;--tile-b:#429979">⌘</i></span></span><span class="app-name" data-i18n="appDesign">Design</span></div>
+</div>
+<div class="page-dots"><i></i><i></i><i></i></div>
+<div aria-hidden="true" class="demo-caption">
+<span data-i18n="captionAll">Alle Apps übersichtlich sortiert</span>
+<span data-i18n="captionSearch">Suche findet deine App sofort</span>
+<span data-i18n="captionLaunch">Ein Klick – und die App startet</span>
+<span data-i18n="captionFolders">Apps in eigenen Ordnern gruppieren</span>
+</div>
+</div>
+<div class="floating-note"><span class="note-icon">⌕</span><span><b data-i18n="noteTitle">Alles sofort finden</b><span data-i18n="noteCopy">Tippen. Finden. Öffnen.</span></span></div>
+</div>
+</section>
+<div aria-label="Produktmerkmale" class="wrap trust-row" data-i18n-attr="aria-label:productFeatures">
+<span><b class="check">✓</b> Native macOS-App</span>
+<span><b class="check">✓</b> Deine Apps, dein Raster</span>
+<span><b class="check">✓</b> Einmal zahlen, dauerhaft nutzen</span>
+</div>
+<section class="wrap content" id="vorteile">
+<div class="section-heading">
+<div class="eyebrow" data-i18n="featuresEyebrow">Weniger suchen, mehr starten</div>
+<h2 data-i18n="featuresTitle">Ein Launchpad, das sich<br/>nach deinem Mac anfühlt.</h2>
+<p data-i18n="featuresIntro">Vertraute Bedienung, liebevolle Details und genau die Übersicht, die im Alltag gefehlt hat.</p>
+</div>
+<div class="features">
+<article class="feature">
+<div class="feature-icon">⌕</div>
+<h3 data-i18n="featureFindTitle">Sofort finden</h3>
+<p data-i18n="featureFindCopy">Suche deine installierten Programme und starte sie direkt – ohne dich durch Ordner zu klicken.</p>
+</article>
+<article class="feature">
+<div class="feature-icon">⠿</div>
+<h3 data-i18n="featureOrganizeTitle">Ordne es, wie du willst</h3>
+<p data-i18n="featureOrganizeCopy">Apps ziehen, sortieren und in Ordner gruppieren. Deine Anordnung bleibt auch nach dem Neustart erhalten.</p>
+</article>
+<article class="feature">
+<div class="feature-icon">◫</div>
+<h3 data-i18n="featureCustomizeTitle">Dein Look, deine Größe</h3>
+<p data-i18n="featureCustomizeCopy">Wähle Symbolgröße, Hintergrund, Transparenz und Rasterreihen passend zu deinem Bildschirm.</p>
+</article>
+<article class="feature">
+<div class="feature-icon">↔</div>
+<h3 data-i18n="featurePagesTitle">Seiten, die mitdenken</h3>
+<p data-i18n="featurePagesCopy">Wechsle per Wischgeste zwischen Seiten. Beim Ziehen kannst du Apps sogar direkt auf die nächste Seite bewegen.</p>
+</article>
+<article class="feature">
+<div class="feature-icon">✧</div>
+<h3 data-i18n="featureMacTitle">Mit macOS im Einklang</h3>
+<p data-i18n="featureMacCopy">Originale App-Symbole, native Bedienung und eine Animation, die sich an deinen Dock-Effekt anpasst.</p>
+</article>
+<article class="feature">
+<div class="feature-icon">⌘</div>
+<h3 data-i18n="featureReadyTitle">Einfach startklar</h3>
+<p data-i18n="featureReadyCopy">Eine schlanke native App für macOS 13 oder neuer – ohne zusätzliche Pakete oder komplizierte Einrichtung.</p>
+</article>
+</div>
+</section>
+<section class="wrap content" id="so-gehts">
+<div class="how">
+<div>
+<div class="eyebrow" data-i18n="howEyebrow">In wenigen Augenblicken</div>
+<h2 data-i18n="howTitle">Installieren.<br/>Öffnen. Loslegen.</h2>
+<p data-i18n="howCopy">Deine installierten Apps erscheinen direkt im Launchpad. Teste alle Funktionen 30 Tage lang und entscheide danach, ob du es für einmalig 8,99 € dauerhaft freischalten möchtest.</p>
+<a class="button secondary" data-i18n="downloadTrial" href="https://github.com/Shadow3561/old-launchpad/releases/latest/download/Old-Launchpad-30-Tage-Test.zip">Probeversion herunterladen <span aria-hidden="true">↓</span></a>
+</div>
+<div class="steps">
+<div class="step"><span class="step-number">01</span><span><b data-i18n="stepDownloadTitle">Herunterladen</b><span data-i18n="stepDownloadCopy">Lade Old Launchpad für deinen Mac herunter.</span></span></div>
+<div class="step"><span class="step-number">02</span><span><b data-i18n="stepDiscoverTitle">Apps entdecken</b><span data-i18n="stepDiscoverCopy">Deine installierten Programme erscheinen übersichtlich im Raster.</span></span></div>
+<div class="step"><span class="step-number">03</span><span><b data-i18n="stepCustomizeTitle">Dein Launchpad gestalten</b><span data-i18n="stepCustomizeCopy">Ordne Apps, erstelle Ordner und passe das Erscheinungsbild an.</span></span></div>
+</div>
+</div>
+</section>
+<section class="wrap content pricing" id="kaufen">
+<div class="pricing-copy">
+<div class="eyebrow" data-i18n="pricingEyebrow">Ein fairer Preis. Kein Abo.</div>
+<h2 data-i18n="pricingTitle">30 Tage ausprobieren.<br/>Dann entscheiden.</h2>
+<p data-i18n="pricingCopy">Teste alle Funktionen 30 Tage lang kostenlos. Danach kannst du Old Launchpad mit einer einmaligen Zahlung von 8,99 € dauerhaft freischalten.</p>
+</div>
+<div class="price-card">
+<div class="price-label" data-i18n="priceLabel">Old Launchpad · Einzellizenz</div>
+<div class="price">8,99 €</div>
+<div class="price-detail" data-i18n="priceDetail">einmalig · kein Abo</div>
+<ul class="price-list">
+<li><span class="check">✓</span> 30 Tage kostenlos testen</li>
+<li><span class="check">✓</span> Alle Funktionen inklusive</li>
+<li><span class="check">✓</span> Einmal zahlen, dauerhaft nutzen</li>
+</ul>
+<a class="button" data-i18n="buyNow" href="https://old-launchpad.lemonsqueezy.com/checkout/buy/937768e9-7a15-4015-b7bd-3229686c771f">Jetzt kaufen <span aria-hidden="true">→</span></a>
+<p class="checkout-note" data-i18n="checkoutNote">Einmalige Zahlung · Kein Abo</p>
+<a class="download-link" data-i18n="tryInstead" href="https://github.com/Shadow3561/old-launchpad/releases/latest/download/Old-Launchpad-30-Tage-Test.zip">Oder erst 30 Tage kostenlos testen ↓</a>
+</div>
+</section>
+<section class="wrap content" id="faq">
+<div class="section-heading">
+<div class="eyebrow" data-i18n="faqEyebrow">Gut zu wissen</div>
+<h2 data-i18n="faqTitle">Häufige Fragen</h2>
+</div>
+<div class="faq">
+<details>
+<summary data-i18n="faqOsQuestion">Welche macOS-Version brauche ich?</summary>
+<p data-i18n="faqOsAnswer">Old Launchpad benötigt macOS 13 oder neuer.</p>
+</details>
+<details>
+<summary data-i18n="faqTrialQuestion">Wie funktioniert die Probeversion?</summary>
+<p data-i18n="faqTrialAnswer">Die Probeversion enthält alle Funktionen und kann 30 Tage kostenlos genutzt werden. Die Frist beginnt beim ersten Start der App. Danach kannst du sie mit einer einmaligen Zahlung von 8,99 € dauerhaft freischalten.</p>
+</details>
+<details>
+<summary data-i18n="faqAppsQuestion">Wo finde ich meine installierten Apps?</summary>
+<p data-i18n="faqAppsAnswer">Old Launchpad liest Programme aus den üblichen macOS-Programmordnern und zeigt sie in einem durchsuchbaren Raster an.</p>
+</details>
+<details>
+<summary data-i18n="faqSubscriptionQuestion">Ist ein Abo erforderlich?</summary>
+<p data-i18n="faqSubscriptionAnswer">Nein. Die Lizenz kostet einmalig 8,99 € – es gibt kein Abo.</p>
+</details>
+</div>
+</section>
+<section class="wrap content" id="probeversion" style="padding-top:0">
+<div class="section-heading">
+<div class="eyebrow" data-i18n="trialEyebrow">30 Tage kostenlos ausprobieren</div>
+<h2 data-i18n="trialTitle">Erst testen.<br/>Dann in Ruhe entscheiden.</h2>
+<p data-i18n="trialCopy">Alle Funktionen inklusive. Nach 30 Tagen kannst du Old Launchpad für einmalig 8,99 € dauerhaft freischalten.</p>
+<div data-i18n="downloadTrial" style="margin-top:24px">
+<a class="button" data-i18n="downloadTrial" href="https://github.com/Shadow3561/old-launchpad/releases/latest/download/Old-Launchpad-30-Tage-Test.zip">Probeversion herunterladen <span aria-hidden="true">↓</span></a>
+</div>
+<p class="fineprint" data-i18n="trialFineprint">macOS 13 oder neuer <span>·</span> Keine Zahlungsdaten für den Test</p>
+<p data-i18n="buyDirect"><a class="download-link" data-i18n="buyDirect" href="https://old-launchpad.lemonsqueezy.com/checkout/buy/937768e9-7a15-4015-b7bd-3229686c771f">Oder direkt kaufen · einmalig 8,99 €</a></p>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="wrap footer-inner">
+<span>© 2026 Old Launchpad</span>
+<span data-i18n="footerTagline">Ein kleines Launchpad für deinen Mac.</span>
+<span class="footer-links">
+<a data-i18n="footerImprint" href="impressum.html">Impressum</a>
+<a data-i18n="footerPrivacy" href="datenschutz.html">Datenschutz</a>
+<a data-i18n="footerConsumer" href="verbraucherinformationen.html">Verbraucherinformationen</a>
+<a data-i18n="footerLicense" href="lizenzbedingungen.html">Lizenzbedingungen</a>
+</span>
+</div>
+</footer>
+<script>
     const menuButton = document.querySelector(".mobile-toggle");
     const navigation = document.querySelector("#main-nav");
 
     menuButton.addEventListener("click", () => {
       const isOpen = navigation.classList.toggle("open");
       menuButton.setAttribute("aria-expanded", String(isOpen));
-      menuButton.setAttribute("aria-label", isOpen ? "Menü schließen" : "Menü öffnen");
+      menuButton.setAttribute("aria-label", isOpen ? translations[document.documentElement.lang].menuClose : translations[document.documentElement.lang].menuOpen);
     });
 
     navigation.addEventListener("click", (event) => {
       if (event.target.closest("a")) {
         navigation.classList.remove("open");
         menuButton.setAttribute("aria-expanded", "false");
-        menuButton.setAttribute("aria-label", "Menü öffnen");
+        menuButton.setAttribute("aria-label", translations[document.documentElement.lang].menuOpen);
       }
     });
   </script>
-</body>
+<script defer="True" src="languages.js"></script></body>
 </html>
