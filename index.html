@@ -269,6 +269,8 @@
     .price-list { display: grid; gap: 9px; margin: 20px 0 22px; padding: 0; list-style: none; color: #d7deeb; font-size: 13px; }
     .price-list li { display: flex; gap: 9px; }
     .price-card .button { width: 100%; }
+    .purchase-options { display: grid; gap: 10px; }
+    .purchase-heading { margin: 0 0 12px; color: #d7deeb; font-size: 13px; font-weight: 600; }
     .checkout-note { margin: 11px 0 0; color: #98a4ba; font-size: 11px; text-align: center; }
     .download-link { display: inline-block; margin-top: 14px; color: var(--mint); font-size: 13px; }
     .download-link:hover { text-decoration: underline; }
@@ -358,7 +360,7 @@
 <a data-i18n="navHow" href="#so-gehts">So funktioniert's</a>
 <a data-i18n="navTrial" href="#probeversion">Probeversion</a>
 <a data-i18n="navPrice" href="#kaufen">Preis</a>
-<a class="button small" data-i18n="buyTop" href="https://old-launchpad.lemonsqueezy.com/checkout/buy/937768e9-7a15-4015-b7bd-3229686c771f">Jetzt kaufen · 8,99 € <span aria-hidden="true">↗</span></a>
+<a class="button small" data-i18n="buyTop" href="#kaufen">Jetzt kaufen · 8,99 € <span aria-hidden="true">↗</span></a>
 </nav>
 <div class="language-control"><select aria-label="Sprache auswählen" data-i18n-attr="aria-label:languageLabel" id="language-switcher"><option value="de">🇩🇪 Deutsch</option><option value="en">🇬🇧 English</option><option value="fr">🇫🇷 Français</option><option value="es">🇪🇸 Español</option></select></div></header>
 <main>
@@ -368,7 +370,7 @@
 <h1 data-i18n="heroTitle">Deine Apps.<br/><span>Wieder auf einen Blick.</span></h1>
 <p class="hero-copy" data-i18n="heroCopy">Ein aufgeräumtes Raster. Deine Lieblings-Apps sofort griffbereit. Old Launchpad bringt das einfache, vertraute App-Launchpad zurück auf deinen Mac.</p>
 <div class="hero-actions">
-<a class="button" data-i18n="buyHero" href="https://old-launchpad.lemonsqueezy.com/checkout/buy/937768e9-7a15-4015-b7bd-3229686c771f">Jetzt kaufen · 8,99 € <span aria-hidden="true">→</span></a>
+<a class="button" data-i18n="buyHero" href="#kaufen">Jetzt kaufen · 8,99 € <span aria-hidden="true">→</span></a>
 <a class="button secondary" data-i18n="tryHero" href="https://github.com/Shadow3561/old-launchpad/releases/latest/download/Old-Launchpad-30-Tage-Test.zip">30 Tage kostenlos testen <span aria-hidden="true">↓</span></a>
 </div>
 <p class="fineprint" data-i18n="heroFineprint">30 Tage gratis <span>·</span> danach einmalig 8,99 € <span>·</span> kein Abo</p>
@@ -481,7 +483,13 @@
 <li><span class="check">✓</span> Alle Funktionen inklusive</li>
 <li><span class="check">✓</span> Einmal zahlen, dauerhaft nutzen</li>
 </ul>
-<a class="button" data-i18n="buyNow" href="https://old-launchpad.lemonsqueezy.com/checkout/buy/937768e9-7a15-4015-b7bd-3229686c771f">Jetzt kaufen <span aria-hidden="true">→</span></a>
+<p class="purchase-heading" data-i18n="chooseStore">Kaufplattform auswählen</p>
+<div class="purchase-options">
+<a class="button" data-i18n="buyLemon" href="https://old-launchpad.lemonsqueezy.com/checkout/buy/937768e9-7a15-4015-b7bd-3229686c771f">Bei Lemon Squeezy kaufen ↗</a>
+<a class="button secondary" data-i18n="buyGumroad" href="https://wudani.gumroad.com/l/tvkggm">Bei Gumroad kaufen ↗</a>
+<a class="button secondary" data-i18n="buyPolar" href="https://buy.polar.sh/polar_cl_kl74XQ08DD9RmHDPItgjtgBaBwxxdz4n9e8u10Xxkff">Bei Polar kaufen ↗</a>
+</div>
+<p class="checkout-note" data-i18n="purchaseLicenseNote">Lade nach dem Kauf die App der gewählten Plattform herunter und wähle diese bei der Lizenzaktivierung aus.</p>
 <p class="checkout-note" data-i18n="checkoutNote">Einmalige Zahlung · Kein Abo</p>
 <a class="download-link" data-i18n="tryInstead" href="https://github.com/Shadow3561/old-launchpad/releases/latest/download/Old-Launchpad-30-Tage-Test.zip">Oder erst 30 Tage kostenlos testen ↓</a>
 </div>
@@ -515,11 +523,11 @@
 <div class="eyebrow" data-i18n="trialEyebrow">30 Tage kostenlos ausprobieren</div>
 <h2 data-i18n="trialTitle">Erst testen.<br/>Dann in Ruhe entscheiden.</h2>
 <p data-i18n="trialCopy">Alle Funktionen inklusive. Nach 30 Tagen kannst du Old Launchpad für einmalig 8,99 € dauerhaft freischalten.</p>
-<div data-i18n="downloadTrial" style="margin-top:24px">
+<div style="margin-top:24px">
 <a class="button" data-i18n="downloadTrial" href="https://github.com/Shadow3561/old-launchpad/releases/latest/download/Old-Launchpad-30-Tage-Test.zip">Probeversion herunterladen <span aria-hidden="true">↓</span></a>
 </div>
 <p class="fineprint" data-i18n="trialFineprint">macOS 13 oder neuer <span>·</span> Keine Zahlungsdaten für den Test</p>
-<p data-i18n="buyDirect"><a class="download-link" data-i18n="buyDirect" href="https://old-launchpad.lemonsqueezy.com/checkout/buy/937768e9-7a15-4015-b7bd-3229686c771f">Oder direkt kaufen · einmalig 8,99 €</a></p>
+<p><a class="download-link" data-i18n="buyDirect" href="#kaufen">Oder direkt kaufen · einmalig 8,99 €</a></p>
 </div>
 </section>
 </main>
