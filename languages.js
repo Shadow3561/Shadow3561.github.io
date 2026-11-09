@@ -458,7 +458,7 @@ const legalTranslations = {
     license6a: "Statutory rights relating to digital products, in particular rights concerning defects and mandatory consumer rights, are not excluded or restricted by these license terms.",
     license6b: "We are liable without limitation for intent and gross negligence, for injury to life, body or health, under the German Product Liability Act, and to the extent of an expressly assumed guarantee. In the event of a slightly negligent breach of a material contractual obligation, liability is limited to the foreseeable loss typical for this type of contract. Otherwise, liability for loss caused by slight negligence is excluded to the extent permitted by law. These provisions do not affect mandatory statutory claims.",
     license7Title: "7. Contact",
-    license7: "Daniel Wussow, Mühlenweg 5, 25355 Barmstedt, Germany<br><a href=\"mailto:enzym.plane.7q@icloud.com\">enzym.plane.7q@icloud.com</a>"
+    license7: "Daniel Wussow, C/O www.impressum-ohne-adresse.de, Wernher-von-Braun-Str. 5-7, 69214 Eppelheim, Germany<br><a href=\"mailto:enzym.plane.7q@icloud.com\">enzym.plane.7q@icloud.com</a>"
   },
   fr: {
     legalNotice: "Les traductions sont fournies à titre informatif uniquement. En cas de divergence, la version allemande prévaut.",
@@ -532,7 +532,7 @@ const legalTranslations = {
     license6a: "Les droits prévus par la loi pour les produits numériques, notamment les droits en cas de défaut et les droits impératifs des consommateurs, ne sont ni exclus ni limités par ces conditions de licence.",
     license6b: "Notre responsabilité est illimitée en cas d’intention ou de faute lourde, d’atteinte à la vie, au corps ou à la santé, au titre de la loi allemande sur la responsabilité du fait des produits, ainsi que dans les limites d’une garantie expressément accordée. En cas de manquement par négligence légère à une obligation contractuelle essentielle, la responsabilité est limitée au dommage prévisible et typique au moment de la conclusion du contrat. Pour le reste, la responsabilité pour les dommages causés par négligence légère est exclue dans la mesure autorisée par la loi. Ces règles n’affectent pas les droits impératifs prévus par la loi.",
     license7Title: "7. Contact",
-    license7: "Daniel Wussow, Mühlenweg 5, 25355 Barmstedt, Allemagne<br><a href=\"mailto:enzym.plane.7q@icloud.com\">enzym.plane.7q@icloud.com</a>"
+    license7: "Daniel Wussow, C/O www.impressum-ohne-adresse.de, Wernher-von-Braun-Str. 5-7, 69214 Eppelheim, Allemagne<br><a href=\"mailto:enzym.plane.7q@icloud.com\">enzym.plane.7q@icloud.com</a>"
   },
   es: {
     legalNotice: "Las traducciones se ofrecen únicamente con fines informativos. En caso de discrepancia, prevalece la versión alemana.",
@@ -606,7 +606,7 @@ const legalTranslations = {
     license6a: "Estas condiciones de licencia no excluyen ni limitan los derechos legales relativos a productos digitales, en particular los derechos por defectos y los derechos imperativos de los consumidores.",
     license6b: "Respondemos sin limitación en caso de dolo o negligencia grave, daños a la vida, la integridad física o la salud, conforme a la Ley alemana de responsabilidad por productos defectuosos y en la medida de cualquier garantía asumida expresamente. Si se incumple por negligencia leve una obligación contractual esencial, la responsabilidad se limita al daño previsible y típico al celebrarse el contrato. En los demás casos, la responsabilidad por daños causados por negligencia leve queda excluida en la medida permitida por la ley. Estas disposiciones no afectan a las reclamaciones legales imperativas.",
     license7Title: "7. Contacto",
-    license7: "Daniel Wussow, Mühlenweg 5, 25355 Barmstedt, Alemania<br><a href=\"mailto:enzym.plane.7q@icloud.com\">enzym.plane.7q@icloud.com</a>"
+    license7: "Daniel Wussow, C/O www.impressum-ohne-adresse.de, Wernher-von-Braun-Str. 5-7, 69214 Eppelheim, Alemania<br><a href=\"mailto:enzym.plane.7q@icloud.com\">enzym.plane.7q@icloud.com</a>"
   }
 };
 
