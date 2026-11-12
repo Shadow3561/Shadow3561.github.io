@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shadow3561.github.io/sitemap.xml
+Sitemap: https://shadow3561.github.io/BaseBar-Menu/sitemap.xml

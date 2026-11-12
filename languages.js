@@ -702,6 +702,20 @@ function applyLanguage(language = activeLanguage) {
   else document.title = originalTitle;
   const description = document.querySelector('meta[name="description"]');
   if (description) description.content = dictionary.metaDescription;
+  const canonical = new URL(window.location.pathname, window.location.origin);
+  if (supportedLanguages.includes(requestedLanguage) && activeLanguage !== "de") {
+    canonical.searchParams.set("lang", activeLanguage);
+  }
+  document.querySelector('link[rel="canonical"]')?.setAttribute("href", canonical.toString());
+  document.querySelector('meta[property="og:title"]')?.setAttribute("content", document.title);
+  document.querySelector('meta[property="og:description"]')?.setAttribute("content", dictionary.metaDescription);
+  document.querySelector('meta[property="og:url"]')?.setAttribute("content", canonical.toString());
+  const structuredData = document.querySelector('script[type="application/ld+json"]');
+  if (structuredData) {
+    const schema = JSON.parse(structuredData.textContent);
+    schema.description = dictionary.metaDescription;
+    structuredData.textContent = JSON.stringify(schema);
+  }
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.dataset.i18n;
