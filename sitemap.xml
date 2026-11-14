@@ -37,4 +37,40 @@
   <url><loc>https://shadow3561.github.io/datenschutz.html</loc></url>
   <url><loc>https://shadow3561.github.io/lizenzbedingungen.html</loc></url>
   <url><loc>https://shadow3561.github.io/verbraucherinformationen.html</loc></url>
+<url>
+    <loc>https://shadow3561.github.io/BaseBar-Menu/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://shadow3561.github.io/BaseBar-Menu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shadow3561.github.io/BaseBar-Menu/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://shadow3561.github.io/BaseBar-Menu/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://shadow3561.github.io/BaseBar-Menu/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shadow3561.github.io/BaseBar-Menu/"/>
+  </url>
+  <url>
+    <loc>https://shadow3561.github.io/BaseBar-Menu/?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://shadow3561.github.io/BaseBar-Menu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shadow3561.github.io/BaseBar-Menu/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://shadow3561.github.io/BaseBar-Menu/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://shadow3561.github.io/BaseBar-Menu/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shadow3561.github.io/BaseBar-Menu/"/>
+  </url>
+  <url>
+    <loc>https://shadow3561.github.io/BaseBar-Menu/?lang=es</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://shadow3561.github.io/BaseBar-Menu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shadow3561.github.io/BaseBar-Menu/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://shadow3561.github.io/BaseBar-Menu/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://shadow3561.github.io/BaseBar-Menu/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shadow3561.github.io/BaseBar-Menu/"/>
+  </url>
+  <url>
+    <loc>https://shadow3561.github.io/BaseBar-Menu/?lang=fr</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://shadow3561.github.io/BaseBar-Menu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shadow3561.github.io/BaseBar-Menu/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://shadow3561.github.io/BaseBar-Menu/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://shadow3561.github.io/BaseBar-Menu/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shadow3561.github.io/BaseBar-Menu/"/>
+  </url>
+  <url><loc>https://shadow3561.github.io/BaseBar-Menu/impressum.html</loc></url>
+  <url><loc>https://shadow3561.github.io/BaseBar-Menu/datenschutz.html</loc></url>
+  <url><loc>https://shadow3561.github.io/BaseBar-Menu/lizenzbedingungen.html</loc></url>
+  <url><loc>https://shadow3561.github.io/BaseBar-Menu/verbraucherinformationen.html</loc></url>
 </urlset>
