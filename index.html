@@ -9,9 +9,14 @@
   <meta name="description" content="Zwei Startmenüs für macOS: BaseBar Menu mit Suche, Gruppen, Systemeinstellungen und Dock-Menü oder Old Launchpad im vertrauten App-Raster.">
   <title>BaseBar Menu oder Old Launchpad? | Startmenüs für macOS</title>
   <link rel="canonical" href="https://shadow3561.github.io/">
+  <link rel="alternate" hreflang="de" href="https://shadow3561.github.io/">
+  <link rel="alternate" hreflang="en" href="https://shadow3561.github.io/?lang=en">
+  <link rel="alternate" hreflang="es" href="https://shadow3561.github.io/?lang=es">
+  <link rel="alternate" hreflang="fr" href="https://shadow3561.github.io/?lang=fr">
+  <link rel="alternate" hreflang="x-default" href="https://shadow3561.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Startmenüs für macOS">
-  <meta property="og:title" content="Zwei Wege, deine Apps auf dem Mac zu starten">
+  <meta property="og:title" content="BaseBar Menu oder Old Launchpad? | Startmenüs für macOS">
   <meta property="og:description" content="Vergleiche BaseBar Menu und Old Launchpad und finde das Startmenü, das zu deinem Mac-Arbeitsstil passt.">
   <meta property="og:url" content="https://shadow3561.github.io/">
   <meta property="og:image" content="https://shadow3561.github.io/basebar-menu/store-assets/BaseBarMenu-Product-Collage.png">
@@ -21,7 +26,7 @@
     {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
-      "name": "Startmenüs für macOS: BaseBar Menu und Old Launchpad",
+      "name": "BaseBar Menu oder Old Launchpad? | Startmenüs für macOS",
       "description": "Vergleiche zwei eigenständige macOS-Apps zum Starten und Organisieren deiner Programme.",
       "url": "https://shadow3561.github.io/",
       "mainEntity": {
@@ -128,6 +133,25 @@
     .top-links { display: flex; flex-wrap: wrap; gap: 22px; color: #d6d2d3; font-size: 13px; }
     .top-links a { text-decoration: none; }
     .top-links a:hover { color: white; }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      clip-path: inset(50%);
+    }
+    .language-control {
+      min-height: 36px;
+      padding: 0 10px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: rgba(255, 255, 255, .045);
+      color: var(--text);
+      font: inherit;
+      font-size: 12px;
+    }
     .hero { padding: 88px 0 42px; text-align: center; }
     .eyebrow {
       margin: 0 0 16px;
@@ -294,71 +318,79 @@
   </style>
 </head>
 <body>
-  <a class="skip-link" href="#apps">Zu den Apps</a>
+  <a class="skip-link" href="#apps" data-i18n="skip">Zu den Apps</a>
   <header class="wrap topbar">
-    <a class="brand" href="./" aria-label="Startseite BaseBar Menu und Old Launchpad">
+    <a class="brand" href="./" aria-label="Startseite BaseBar Menu und Old Launchpad" data-i18n-attr="aria-label:brandLabel">
       <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
-      Startmenüs für macOS
+      <span data-i18n="brand">Startmenüs für macOS</span>
     </a>
-    <nav class="top-links" aria-label="Apps">
-      <a href="basebar-menu/">BaseBar Menu</a>
-      <a href="old-launchpad/">Old Launchpad</a>
+    <nav class="top-links" aria-label="Apps" data-i18n-attr="aria-label:appsLabel">
+      <a href="basebar-menu/" data-i18n="basebar">BaseBar Menu</a>
+      <a href="old-launchpad/" data-i18n="launchpad">Old Launchpad</a>
     </nav>
+    <label class="sr-only" for="language-switcher" data-i18n="languageLabel">Sprache auswählen</label>
+    <select class="language-control" id="language-switcher" aria-label="Sprache auswählen" data-i18n-attr="aria-label:languageLabel">
+      <option value="de">Deutsch</option>
+      <option value="en">English</option>
+      <option value="es">Español</option>
+      <option value="fr">Français</option>
+    </select>
   </header>
 
   <main>
     <section class="wrap hero" aria-labelledby="page-title">
-      <p class="eyebrow">Zwei Apps. Zwei Arbeitsweisen.</p>
-      <h1 id="page-title">Finde den Start,<br>der zu dir passt.</h1>
-      <p class="hero-copy">Beide Apps helfen dir, Programme auf dem Mac schnell zu finden und zu öffnen. Wähle zwischen einem flexiblen Startmenü mit Systemzugriffen und einem vertrauten App-Raster.</p>
+      <p class="eyebrow" data-i18n="heroEyebrow">Zwei Apps. Zwei Arbeitsweisen.</p>
+      <h1 id="page-title" data-i18n="heroTitle">Finde den Start, der zu dir passt.</h1>
+      <p class="hero-copy" data-i18n="heroCopy">Beide Apps helfen dir, Programme auf dem Mac schnell zu finden und zu öffnen. Wähle zwischen einem flexiblen Startmenü mit Systemzugriffen und einem vertrauten App-Raster.</p>
     </section>
 
-    <section class="wrap apps" id="apps" aria-label="Die beiden macOS-Apps">
+    <section class="wrap apps" id="apps" aria-label="Die beiden macOS-Apps" data-i18n-attr="aria-label:appsSectionLabel">
       <article class="app-card" aria-labelledby="basebar-title">
-        <p class="card-label">Startmenü für den Alltag</p>
+        <p class="card-label" data-i18n="basebarEyebrow">Startmenü für den Alltag</p>
         <h2 id="basebar-title">BaseBar Menu</h2>
-        <p class="card-copy">Ein Windows-inspiriertes Startmenü, das du über das Dock, die Menüleiste oder beides steuerst – mit Suche, App-Gruppen und schnellen Systemzugriffen.</p>
-        <img class="preview" src="basebar-menu/store-assets/BaseBarMenu-Product-Collage.png" alt="Ansichten von BaseBar Menu mit Programmen, Suche und Einstellungen" loading="lazy">
+        <p class="card-copy" data-i18n="basebarCopy">Ein Windows-inspiriertes Startmenü, das du über das Dock, die Menüleiste oder beides steuerst – mit Suche, App-Gruppen und schnellen Systemzugriffen.</p>
+        <img class="preview" src="basebar-menu/store-assets/BaseBarMenu-Product-Collage.png" alt="Ansichten von BaseBar Menu mit Programmen, Suche und Einstellungen" data-i18n-attr="alt:basebarAlt" loading="lazy">
         <ul class="feature-list">
-          <li>Apps suchen, gruppieren und sortieren</li>
-          <li>macOS-Systemeinstellungen direkt öffnen</li>
-          <li>Laufende Apps beenden oder sofort beenden</li>
-          <li>Dock-Menü mit Anzeigeart, Sprache und Autostart</li>
+          <li data-i18n="basebarFeature1">Apps suchen, gruppieren und sortieren</li>
+          <li data-i18n="basebarFeature2">macOS-Systemeinstellungen direkt öffnen</li>
+          <li data-i18n="basebarFeature3">Laufende Apps beenden oder sofort beenden</li>
+          <li data-i18n="basebarFeature4">Dock-Menü mit Anzeigeart, Sprache und Autostart</li>
         </ul>
-        <a class="card-action" href="basebar-menu/">BaseBar Menu entdecken <span aria-hidden="true">→</span></a>
+        <a class="card-action" href="basebar-menu/" data-i18n="basebarAction">BaseBar Menu entdecken <span aria-hidden="true">→</span></a>
       </article>
 
       <article class="app-card launchpad" aria-labelledby="launchpad-title">
-        <p class="card-label">Das klassische App-Raster</p>
+        <p class="card-label" data-i18n="launchpadEyebrow">Das klassische App-Raster</p>
         <h2 id="launchpad-title">Old Launchpad</h2>
-        <p class="card-copy">Die vertraute Übersicht deiner installierten Apps – als anpassbares Raster mit Seiten, Ordnern und Drag-and-drop.</p>
-        <img class="preview" src="old-launchpad/store-assets/image.png" alt="Vorschau des Old Launchpad App-Rasters" loading="lazy">
+        <p class="card-copy" data-i18n="launchpadCopy">Die vertraute Übersicht deiner installierten Apps – als anpassbares Raster mit Seiten, Ordnern und Drag-and-drop.</p>
+        <img class="preview" src="old-launchpad/store-assets/image.png" alt="Vorschau des Old Launchpad App-Rasters" data-i18n-attr="alt:launchpadAlt" loading="lazy">
         <ul class="feature-list">
-          <li>Apps visuell im Raster finden und starten</li>
-          <li>Symbole ziehen, sortieren und in Ordner legen</li>
-          <li>Zwischen Seiten wechseln und das Raster anpassen</li>
-          <li>30 Tage testen, danach einmalig 8,99 €</li>
+          <li data-i18n="launchpadFeature1">Apps visuell im Raster finden und starten</li>
+          <li data-i18n="launchpadFeature2">Symbole ziehen, sortieren und in Ordner legen</li>
+          <li data-i18n="launchpadFeature3">Zwischen Seiten wechseln und das Raster anpassen</li>
+          <li data-i18n="launchpadFeature4">30 Tage testen, danach einmalig 8,99 €</li>
         </ul>
-        <a class="card-action" href="old-launchpad/">Old Launchpad entdecken <span aria-hidden="true">→</span></a>
+        <a class="card-action" href="old-launchpad/" data-i18n="launchpadAction">Old Launchpad entdecken <span aria-hidden="true">→</span></a>
       </article>
     </section>
 
-    <section class="wrap difference" aria-label="Unterschiede der Apps">
-      <p><b>BaseBar Menu</b>Wenn du Apps, Gruppen, Systemeinstellungen und laufende Programme an einem zentralen Ort erreichen möchtest.</p>
-      <span class="versus" aria-hidden="true">ODER</span>
-      <p><b>Old Launchpad</b>Wenn du deine Apps lieber in einem visuellen Raster mit Ordnern und Seiten durchstöberst.</p>
+    <section class="wrap difference" aria-label="Unterschiede der Apps" data-i18n-attr="aria-label:differenceLabel">
+      <p><b>BaseBar Menu</b><span data-i18n="basebarDifference">Wenn du Apps, Gruppen, Systemeinstellungen und laufende Programme an einem zentralen Ort erreichen möchtest.</span></p>
+      <span class="versus" aria-hidden="true" data-i18n="versus">ODER</span>
+      <p><b>Old Launchpad</b><span data-i18n="launchpadDifference">Wenn du deine Apps lieber in einem visuellen Raster mit Ordnern und Seiten durchstöberst.</span></p>
     </section>
   </main>
 
   <footer class="footer">
     <div class="wrap footer-inner">
       <p>© 2026 · BaseBar Menu &amp; Old Launchpad</p>
-      <nav class="legal-links" aria-label="Rechtliches">
-        <a href="basebar-menu/impressum.html">Impressum</a>
-        <a href="basebar-menu/datenschutz.html">Datenschutz · BaseBar Menu</a>
-        <a href="old-launchpad/datenschutz.html">Datenschutz · Old Launchpad</a>
+      <nav class="legal-links" aria-label="Rechtliches" data-i18n-attr="aria-label:legalLabel">
+        <a href="basebar-menu/impressum.html" data-i18n="imprint">Impressum</a>
+        <a href="basebar-menu/datenschutz.html" data-i18n="basebarPrivacy">Datenschutz · BaseBar Menu</a>
+        <a href="old-launchpad/datenschutz.html" data-i18n="launchpadPrivacy">Datenschutz · Old Launchpad</a>
       </nav>
     </div>
   </footer>
+  <script src="home-i18n.js"></script>
 </body>
 </html>

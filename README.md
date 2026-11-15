@@ -27,6 +27,8 @@ https://shadow3561.github.io/
 
 The Search Console verification tag is retained on the root page. After deployment, submit `https://shadow3561.github.io/sitemap.xml` in Search Console.
 
+The shared home page and both product pages support German, English, Spanish, and French. The language selector uses the `lang` URL parameter and does not store a preference in cookies or local browser storage.
+
 The product pages keep their checkout and download destinations. BaseBar Menu's trial download is served by the `Shadow3561/BaseBar-Menu_Trail` repository.
 
 No analytics or tracking scripts have been added.
