@@ -1,0 +1,840 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101012">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="BaseBar Menu bringt ein Windows-inspiriertes Startmenü auf macOS. Wähle Dock, Menüleiste oder beides – für App-Suche, Gruppen, Systemeinstellungen und laufende Apps.">
+  <title>Startmenü für macOS im Dock &amp; in der Menüleiste | BaseBar Menu</title>
+  <link rel="canonical" href="https://shadow3561.github.io/basebar-menu/">
+  <link rel="alternate" hreflang="de" href="https://shadow3561.github.io/basebar-menu/">
+  <link rel="alternate" hreflang="en" href="https://shadow3561.github.io/basebar-menu/?lang=en">
+  <link rel="alternate" hreflang="es" href="https://shadow3561.github.io/basebar-menu/?lang=es">
+  <link rel="alternate" hreflang="fr" href="https://shadow3561.github.io/basebar-menu/?lang=fr">
+  <link rel="alternate" hreflang="x-default" href="https://shadow3561.github.io/basebar-menu/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BaseBar Menu">
+  <meta property="og:title" content="Startmenü für macOS im Dock &amp; in der Menüleiste | BaseBar Menu">
+  <meta property="og:description" content="BaseBar Menu bringt ein Windows-inspiriertes Startmenü auf macOS. Wähle Dock, Menüleiste oder beides – für App-Suche, Gruppen, Systemeinstellungen und laufende Apps.">
+  <meta property="og:url" content="https://shadow3561.github.io/basebar-menu/">
+  <meta property="og:image" content="https://shadow3561.github.io/basebar-menu/store-assets/BaseBarMenu-Product-Collage.png">
+  <meta property="og:image:alt" content="BaseBar Menu mit Programmen, Suche und Einstellungen">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Startmenü für macOS im Dock &amp; in der Menüleiste | BaseBar Menu">
+  <meta name="twitter:description" content="Programme finden, Gruppen verwalten und macOS-Systemeinstellungen öffnen – im Dock, in der Menüleiste oder beides.">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "BaseBar Menu",
+      "description": "BaseBar Menu bringt ein Windows-inspiriertes Startmenü auf macOS. Wähle Dock, Menüleiste oder beides – für App-Suche, Gruppen, Systemeinstellungen und laufende Apps.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "macOS 13 oder neuer",
+      "url": "https://shadow3561.github.io/basebar-menu/",
+      "image": "https://shadow3561.github.io/basebar-menu/store-assets/BaseBarMenu-Product-Collage.png"
+    }
+  </script>
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #101012;
+      --surface: #18181c;
+      --surface-raised: #202025;
+      --text: #f5f2f1;
+      --muted: #aaa5a4;
+      --line: rgba(255, 255, 255, .1);
+      --red: #f06b60;
+      --orange: #f5a078;
+      --page-width: 1160px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(ellipse at 82% 5%, rgba(181, 66, 54, .19), transparent 34rem),
+        radial-gradient(ellipse at 8% 30%, rgba(108, 48, 47, .12), transparent 32rem),
+        var(--background);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    a { color: inherit; }
+
+    .wrap {
+      width: min(var(--page-width), calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      z-index: 5;
+      top: 0;
+      border-bottom: 1px solid rgba(255, 255, 255, .07);
+      background: rgba(16, 16, 18, .8);
+      backdrop-filter: blur(18px);
+    }
+
+    .header-inner {
+      display: flex;
+      min-height: 76px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .header-inner > .button { white-space: nowrap; }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 17px;
+      font-weight: 800;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 31px;
+      height: 31px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3px;
+      padding: 5px;
+      border: 1px solid rgba(255, 255, 255, .22);
+      border-radius: 9px;
+      background: linear-gradient(145deg, rgba(240, 107, 96, .3), rgba(245, 160, 120, .12));
+      box-shadow: 0 0 24px rgba(240, 107, 96, .16);
+    }
+
+    .brand-mark span {
+      border-radius: 2px;
+      background: linear-gradient(135deg, var(--red), var(--orange));
+    }
+
+    .brand-mark span:last-child { opacity: .48; }
+
+    .language-select {
+      min-height: 38px;
+      padding: 0 10px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--surface);
+      color: var(--text);
+      font: inherit;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    nav a {
+      color: #d0cccb;
+      font-size: 13px;
+      text-decoration: none;
+      transition: color .2s ease;
+      white-space: nowrap;
+    }
+
+    nav a:hover, .footer-links a:hover { color: var(--orange); }
+
+    .button {
+      display: inline-flex;
+      min-height: 46px;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 0 20px;
+      border: 1px solid transparent;
+      border-radius: 12px;
+      background: linear-gradient(115deg, #ed6b60, #e95f59 55%, #ed8b69);
+      box-shadow: 0 8px 26px rgba(218, 83, 72, .2);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(218, 83, 72, .3);
+    }
+
+    .button-secondary {
+      border-color: var(--line);
+      background: rgba(255, 255, 255, .045);
+      box-shadow: none;
+      color: var(--text);
+    }
+
+    .button-secondary:hover {
+      border-color: rgba(245, 160, 120, .5);
+      box-shadow: none;
+    }
+
+    .hero {
+      display: grid;
+      min-height: 630px;
+      grid-template-columns: .92fr 1.08fr;
+      align-items: center;
+      gap: 56px;
+      padding-top: 70px;
+      padding-bottom: 85px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0 0 20px;
+      color: #f4a28d;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--red);
+      box-shadow: 0 0 12px var(--red);
+      content: "";
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+
+    h1, h2, h3 {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: -.04em;
+    }
+
+    h1 {
+      max-width: 570px;
+      margin-bottom: 22px;
+      font-size: clamp(44px, 5.4vw, 72px);
+      font-weight: 800;
+      line-height: 1.04;
+    }
+
+    .gradient-text {
+      background: linear-gradient(100deg, #f0796b 8%, #ffb18d 82%);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-copy {
+      max-width: 510px;
+      margin-bottom: 30px;
+      color: #c1bcbb;
+      font-size: 17px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 25px;
+    }
+
+    .hero-note {
+      margin-bottom: 0;
+      color: #938d8c;
+      font-size: 12px;
+    }
+
+    .hero-note span { padding: 0 7px; color: #e27769; }
+
+    .demo-card {
+      position: relative;
+      padding: 10px;
+      border: 1px solid rgba(255, 255, 255, .14);
+      border-radius: 18px;
+      background: linear-gradient(145deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .025));
+      box-shadow: 0 34px 100px rgba(0, 0, 0, .48), 0 0 70px rgba(196, 74, 62, .13);
+    }
+
+    .demo-card::before {
+      position: absolute;
+      z-index: -1;
+      inset: 12% 9%;
+      border-radius: 50%;
+      background: rgba(213, 91, 77, .2);
+      content: "";
+      filter: blur(70px);
+    }
+
+    .demo-topbar {
+      display: flex;
+      height: 33px;
+      align-items: center;
+      gap: 6px;
+      padding: 0 6px 8px;
+    }
+
+    .demo-topbar i {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #e97569;
+    }
+
+    .demo-topbar i:nth-child(2) { background: #efb16f; }
+    .demo-topbar i:nth-child(3) { background: #85b884; }
+
+    .demo-topbar span {
+      margin-left: auto;
+      color: #aaa5a4;
+      font-size: 10px;
+      letter-spacing: .04em;
+    }
+
+    .demo-card video {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 10px;
+      background: #171719;
+      object-fit: cover;
+    }
+
+    .demo-video-link {
+      margin-top: 16px;
+    }
+
+    .section {
+      padding: 95px 0;
+      border-top: 1px solid rgba(255, 255, 255, .07);
+    }
+
+    .section-heading {
+      max-width: 650px;
+      margin: 0 auto 48px;
+      text-align: center;
+    }
+
+    .section-heading .eyebrow { justify-content: center; }
+
+    h2 {
+      margin-bottom: 15px;
+      font-size: clamp(32px, 4vw, 46px);
+      font-weight: 800;
+      line-height: 1.12;
+    }
+
+    .section-heading p:last-child {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .feature-card {
+      min-height: 218px;
+      padding: 25px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: linear-gradient(145deg, rgba(255, 255, 255, .052), rgba(255, 255, 255, .018));
+    }
+
+    .feature-icon {
+      display: grid;
+      width: 43px;
+      height: 43px;
+      place-items: center;
+      margin-bottom: 19px;
+      border: 1px solid rgba(240, 107, 96, .22);
+      border-radius: 12px;
+      background: rgba(240, 107, 96, .1);
+      color: #f49782;
+      font-size: 19px;
+    }
+
+    h3 {
+      margin-bottom: 8px;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -.02em;
+    }
+
+    .feature-card p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .how-section {
+      background: linear-gradient(180deg, rgba(255, 255, 255, .018), transparent);
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .step {
+      position: relative;
+      padding: 5px 0 0 54px;
+    }
+
+    .step-number {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: grid;
+      width: 38px;
+      height: 38px;
+      place-items: center;
+      border: 1px solid rgba(240, 107, 96, .42);
+      border-radius: 12px;
+      background: rgba(240, 107, 96, .1);
+      color: #ff9a84;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-weight: 800;
+    }
+
+    .step p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .offer-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .offer-card {
+      padding: 32px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--surface);
+    }
+
+    .offer-card-primary {
+      border-color: rgba(240, 107, 96, .46);
+      background:
+        radial-gradient(ellipse at 100% 0, rgba(203, 79, 68, .18), transparent 60%),
+        var(--surface);
+    }
+
+    .offer-card .eyebrow { margin-bottom: 13px; }
+
+    .offer-card h3 {
+      margin-bottom: 9px;
+      font-size: 23px;
+    }
+
+    .offer-card > p {
+      margin-bottom: 22px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .offer-card .button { width: 100%; }
+
+    .offer-small {
+      margin: 13px 0 0 !important;
+      color: #918b8a !important;
+      font-size: 11px !important;
+      text-align: center;
+    }
+
+    .checkout-links {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 9px;
+      margin-top: 20px;
+    }
+
+    .checkout-link {
+      display: grid;
+      min-height: 62px;
+      place-items: center;
+      padding: 9px;
+      border: 1px solid var(--line);
+      border-radius: 11px;
+      background: rgba(255, 255, 255, .035);
+      color: #eee9e8;
+      font-size: 12px;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      transition: border-color .2s ease, background .2s ease;
+    }
+
+    .checkout-link:hover {
+      border-color: rgba(245, 160, 120, .55);
+      background: rgba(240, 107, 96, .08);
+    }
+
+    .faq-list {
+      max-width: 760px;
+      margin: 0 auto;
+      border-top: 1px solid var(--line);
+    }
+
+    details {
+      border-bottom: 1px solid var(--line);
+    }
+
+    summary {
+      position: relative;
+      padding: 20px 34px 20px 0;
+      color: #f2eeee;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+
+    summary::after {
+      position: absolute;
+      top: 17px;
+      right: 3px;
+      color: var(--orange);
+      content: "+";
+      font-size: 22px;
+      font-weight: 400;
+    }
+
+    details[open] summary::after { content: "−"; }
+
+    details p {
+      max-width: 690px;
+      margin: -4px 0 19px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .site-footer {
+      padding: 28px 0;
+      border-top: 1px solid rgba(255, 255, 255, .08);
+      background: rgba(0, 0, 0, .12);
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px 28px;
+    }
+
+    .footer-inner p {
+      margin: 0;
+      color: #8f8988;
+      font-size: 12px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    .footer-links a {
+      color: #aaa5a4;
+      font-size: 12px;
+      text-decoration: none;
+      transition: color .2s ease;
+    }
+
+    :focus-visible {
+      outline: 2px solid #ffab8c;
+      outline-offset: 4px;
+    }
+
+    @media (max-width: 900px) {
+      .header-inner {
+        flex-wrap: wrap;
+        padding: 12px 0;
+      }
+
+      .hero {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        gap: 43px;
+        padding-top: 68px;
+      }
+
+      .hero-text { max-width: 690px; }
+      .demo-card { max-width: 760px; }
+      .feature-grid { grid-template-columns: repeat(2, 1fr); }
+      .offer-grid { grid-template-columns: 1fr 1fr; }
+      nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .wrap { width: min(var(--page-width), calc(100% - 32px)); }
+
+      .header-inner {
+        min-height: 68px;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 13px 0;
+      }
+
+      nav {
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+        padding-top: 6px;
+      }
+
+      nav a { font-size: 12px; }
+      .header-inner > .button { min-height: 39px; padding: 0 13px; font-size: 12px; }
+      .hero { gap: 34px; padding-top: 52px; padding-bottom: 66px; }
+      h1 { font-size: clamp(43px, 12vw, 60px); }
+      .hero-copy { font-size: 15px; }
+      .button { min-height: 44px; padding: 0 15px; font-size: 13px; }
+      .section { padding: 69px 0; }
+      .section-heading { margin-bottom: 34px; }
+      .feature-grid, .steps, .offer-grid { grid-template-columns: 1fr; }
+      .feature-card { min-height: auto; }
+      .step { min-height: 78px; }
+      .offer-card { padding: 25px 21px; }
+      .checkout-links { gap: 7px; }
+      .checkout-link { min-height: 58px; font-size: 11px; }
+      .footer-inner { align-items: flex-start; flex-direction: column; }
+      .footer-links { gap: 11px 16px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+<body data-i18n-page="home">
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#" aria-label="BaseBar Menu Startseite">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+        BaseBar Menu
+      </a>
+      <nav aria-label="Hauptnavigation">
+        <a href="../">Alle Apps</a>
+        <a href="#funktionen">Funktionen</a>
+        <a href="#demo">Einblick</a>
+        <a href="#testen">Testen & Kaufen</a>
+      </nav>
+      <select class="language-select" data-language-switch aria-label="Sprache auswählen">
+        <option value="de">Deutsch</option>
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+      </select>
+      <a class="button" href="#testen">30 Tage testen</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap hero">
+      <div class="hero-text">
+        <p class="eyebrow">Vertraut wie in Windows</p>
+        <h1>Das Startmenü<br><span class="gradient-text">für macOS.</span></h1>
+        <p class="hero-copy">BaseBar Menu bringt ein Windows-inspiriertes Startmenü auf den Mac. Wähle selbst, ob du es über das Dock, die Menüleiste oder beides steuerst. Finde Apps, organisiere Gruppen und öffne Systemeinstellungen oder verwalte laufende Apps.</p>
+        <div class="hero-actions">
+          <a class="button" href="https://raw.githubusercontent.com/Shadow3561/BaseBar-Menu_Trail/main/BaseBar-Menu-30-Tage-Test.zip">30 Tage kostenlos testen <span aria-hidden="true">→</span></a>
+          <a class="button button-secondary" href="#demo">App ansehen</a>
+        </div>
+        <p class="hero-note">Über das Dock, die Menüleiste oder beides <span>•</span> Individuell anpassbar <span>•</span> Kein Abo</p>
+      </div>
+
+      <div class="demo-card" id="demo">
+        <div class="demo-topbar" aria-hidden="true">
+          <i></i><i></i><i></i>
+          <span>BASEBAR MENU · macOS</span>
+        </div>
+        <video controls playsinline preload="none" poster="store-assets/BaseBarMenu-Demo.jpg" aria-label="BaseBar Menu für macOS in einer Produktvorführung">
+          <source src="store-assets/BaseBarMenu-Demo.mp4" type="video/mp4">
+          Dein Browser kann dieses Video nicht wiedergeben.
+        </video>
+        <a class="button button-secondary demo-video-link" href="https://youtu.be/TtdFadD2cu8" target="_blank" rel="noopener noreferrer" data-i18n="Die ausführliche Tour auf YouTube ansehen">Die ausführliche Tour auf YouTube ansehen <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="section" id="funktionen">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">Alles an seinem Platz</p>
+          <h2>Mehr Überblick.<br><span class="gradient-text">Weniger Suchen.</span></h2>
+          <p>Ein vertrauter, flexibler Ort für die Dinge, die du auf deinem Mac täglich brauchst.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">⌘</div>
+            <h3>Programme sofort finden</h3>
+            <p>Durchsuche deine installierten Apps und öffne sie direkt – ohne dich erst durch Ordner zu klicken.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">⚙</div>
+            <h3>Systemeinstellungen direkt öffnen</h3>
+            <p>Greife zentral auf macOS-Systemeinstellungen wie Anzeige, Netzwerk, Datenschutz und weitere Bereiche zu.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">▦</div>
+            <h3>Deine Apps, deine Gruppen</h3>
+            <p>Erstelle eigene Gruppen, sortiere Programme und blende Einträge nach Bedarf ein oder aus.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">◉</div>
+            <h3>Laufende Apps im Blick</h3>
+            <p>Beende laufende Apps normal oder sofort. Für Details zu Prozessen erreichst du außerdem die macOS-Aktivitätsanzeige.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">✦</div>
+            <h3>Dein Look, deine Größe</h3>
+            <p>Passe Größe, Transparenz und Sprache an. Im Dock-Menü wechselst du Anzeigeart und Sprache oder steuerst den Autostart direkt.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">↗</div>
+            <h3>Dock, Menüleiste oder beides</h3>
+            <p>Wähle, ob BaseBar Menu im Dock, in der Menüleiste oder an beiden Orten erscheint. Das Dock-Menü bietet schnellen Zugriff auf App-Organisation und Einstellungen.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how-section">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">Einfach loslegen</p>
+          <h2>Dein Start. In drei Schritten.</h2>
+        </div>
+        <div class="steps">
+          <article class="step">
+            <span class="step-number">1</span>
+            <h3>Menü öffnen</h3>
+            <p>Starte BaseBar Menu über das Symbol im Dock, in der Menüleiste oder nutze beide Wege.</p>
+          </article>
+          <article class="step">
+            <span class="step-number">2</span>
+            <h3>Finden & organisieren</h3>
+            <p>Suche Apps, öffne Systemeinstellungen oder ordne Programme in eigenen Gruppen.</p>
+          </article>
+          <article class="step">
+            <span class="step-number">3</span>
+            <h3>Persönlich gestalten</h3>
+            <p>Stimme Aussehen, Größe und Sprache auf deine Vorlieben ab.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="testen">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">Starte, wie es für dich passt</p>
+          <h2>Erst ausprobieren.<br><span class="gradient-text">Dann entscheiden.</span></h2>
+          <p>Teste BaseBar Menu 30 Tage oder kaufe eine Lizenz über deinen bevorzugten Anbieter.</p>
+        </div>
+        <div class="offer-grid">
+          <article class="offer-card offer-card-primary">
+            <p class="eyebrow">30 Tage kostenlos</p>
+            <h3>BaseBar Menu ausprobieren</h3>
+            <p>Lade die Testversion herunter und lerne alle Funktionen in Ruhe kennen.</p>
+            <a class="button" href="https://raw.githubusercontent.com/Shadow3561/BaseBar-Menu_Trail/main/BaseBar-Menu-30-Tage-Test.zip">Testversion herunterladen <span aria-hidden="true">↓</span></a>
+            <p class="offer-small">Der Download enthält die von Apple notarisiert und gestapelt bereitgestellte 30-Tage-Testversion für macOS.</p>
+          </article>
+          <article class="offer-card">
+            <p class="eyebrow">Einmal kaufen</p>
+            <h3>Deine Lizenz, dein Anbieter</h3>
+            <p>Kein Abo. Wähle den Checkout, bei dem du deinen Kauf abwickeln möchtest. Preis und Zahlungsarten siehst du direkt beim Anbieter.</p>
+            <div class="checkout-links">
+              <a class="checkout-link" href="https://old-launchpad.lemonsqueezy.com/checkout/buy/fe11c7ef-a2dd-4425-87cf-052ddb98ea6d" target="_blank" rel="noopener noreferrer">Lemon Squeezy <span aria-hidden="true">↗</span></a>
+              <a class="checkout-link" href="https://wudani.gumroad.com/l/ikvlsr?wanted=true" target="_blank" rel="noopener noreferrer">Gumroad <span aria-hidden="true">↗</span></a>
+              <a class="checkout-link" href="https://buy.polar.sh/polar_cl_DICElLT7BbgmrlTvqirEounsJgxY3twzWedGJ3X3gRx" target="_blank" rel="noopener noreferrer">Polar <span aria-hidden="true">↗</span></a>
+            </div>
+            <p class="offer-small">Alle drei Anbieter aktivieren dieselbe BaseBar Menu-Version.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">Noch Fragen?</p>
+          <h2>Gut zu wissen</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Gibt es ein Startmenü wie in Windows für macOS?</summary>
+            <p>BaseBar Menu ist eine eigenständige macOS-App mit einem Windows-inspirierten Startmenü. Du findest installierte Apps über die Suche, organisierst sie in Gruppen und wählst, ob du BaseBar Menu über das Dock, die Menüleiste oder beides steuerst.</p>
+          </details>
+          <details>
+            <summary>Was ist in der Testversion enthalten?</summary>
+            <p>Die Testversion bietet 30 Tage Zugriff auf BaseBar Menu, damit du die Funktionen vor dem Kauf ausprobieren kannst.</p>
+          </details>
+          <details>
+            <summary>Ist der Kauf ein Abonnement?</summary>
+            <p>Nein. Du kaufst eine Lizenz einmalig. Die verfügbaren Zahlungsarten und der aktuelle Preis werden im Checkout des gewählten Anbieters angezeigt.</p>
+          </details>
+          <details>
+            <summary>Kann ich meine Lizenz bei jedem Anbieter aktivieren?</summary>
+            <p>Ja. Wähle im Aktivierungsfenster den Anbieter, bei dem du gekauft hast, und gib die zugehörigen Lizenzdaten ein. Bei Polar ist keine E-Mail-Adresse erforderlich.</p>
+          </details>
+          <details>
+            <summary>Wo finde ich Hilfe zur Bedienung?</summary>
+            <p>Die App enthält eine Hilfe zur Bedienung. Du erreichst sie über das Kontextmenü im Dock oder in der Menüleiste.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 BaseBar Menu · Daniel Wussow</p>
+      <div class="footer-links">
+        <a href="../">Alle Apps</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="lizenzbedingungen.html">Lizenzbedingungen</a>
+        <a href="verbraucherinformationen.html">Verbraucherinformationen</a>
+      </div>
+    </div>
+  </footer>
+  <script src="i18n.js" defer></script>
+</body>
+</html>

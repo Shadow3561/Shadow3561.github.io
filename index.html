@@ -1,55 +1,68 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="de">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="#090d18" name="theme-color"/>
-<meta name="google-site-verification" content="c1-sBBo8vRKJbwgsOjKRS2gbVuSvC-ljGOCJlhRiXTg"/>
-<meta content="Old Launchpad bringt das vertraute App-Raster zurück auf deinen Mac. 30 Tage kostenlos testen, danach einmalig 8,99 €." data-i18n-attr="content:metaDescription" name="description"/>
-<title data-i18n="metaTitle">Old Launchpad — Deine Apps. Wieder auf einen Blick.</title>
-<link rel="canonical" href="https://shadow3561.github.io/"/>
-<link rel="alternate" hreflang="de" href="https://shadow3561.github.io/"/>
-<link rel="alternate" hreflang="en" href="https://shadow3561.github.io/?lang=en"/>
-<link rel="alternate" hreflang="es" href="https://shadow3561.github.io/?lang=es"/>
-<link rel="alternate" hreflang="fr" href="https://shadow3561.github.io/?lang=fr"/>
-<link rel="alternate" hreflang="x-default" href="https://shadow3561.github.io/"/>
-<meta property="og:type" content="website"/>
-<meta property="og:site_name" content="Old Launchpad"/>
-<meta property="og:title" content="Old Launchpad — Deine Apps. Wieder auf einen Blick."/>
-<meta property="og:description" content="Old Launchpad bringt das vertraute App-Raster zurück auf deinen Mac. 30 Tage kostenlos testen, danach einmalig 8,99 €."/>
-<meta property="og:url" content="https://shadow3561.github.io/"/>
-<meta property="og:image" content="https://shadow3561.github.io/assets/old-launchpad-icon.png"/>
-<meta name="twitter:card" content="summary"/>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Old Launchpad",
-  "description": "Old Launchpad bringt das vertraute App-Raster zurück auf deinen Mac. 30 Tage kostenlos testen, danach einmalig 8,99 €.",
-  "applicationCategory": "UtilitiesApplication",
-  "operatingSystem": "macOS 13 oder neuer",
-  "url": "https://shadow3561.github.io/",
-  "image": "https://shadow3561.github.io/assets/old-launchpad-icon.png",
-  "offers": {
-    "@type": "Offer",
-    "price": "8.99",
-    "priceCurrency": "EUR",
-    "availability": "https://schema.org/InStock",
-    "url": "https://shadow3561.github.io/#kaufen"
-  }
-}
-</script>
-<link href="assets/old-launchpad-icon.png" rel="icon" type="image/png"/>
-<style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111116">
+  <meta name="robots" content="index,follow">
+  <meta name="google-site-verification" content="c1-sBBo8vRKJbwgsOjKRS2gbVuSvC-ljGOCJlhRiXTg">
+  <meta name="description" content="Zwei Startmenüs für macOS: BaseBar Menu mit Suche, Gruppen, Systemeinstellungen und Dock-Menü oder Old Launchpad im vertrauten App-Raster.">
+  <title>BaseBar Menu oder Old Launchpad? | Startmenüs für macOS</title>
+  <link rel="canonical" href="https://shadow3561.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Startmenüs für macOS">
+  <meta property="og:title" content="Zwei Wege, deine Apps auf dem Mac zu starten">
+  <meta property="og:description" content="Vergleiche BaseBar Menu und Old Launchpad und finde das Startmenü, das zu deinem Mac-Arbeitsstil passt.">
+  <meta property="og:url" content="https://shadow3561.github.io/">
+  <meta property="og:image" content="https://shadow3561.github.io/basebar-menu/store-assets/BaseBarMenu-Product-Collage.png">
+  <meta property="og:image:alt" content="BaseBar Menu und Old Launchpad für macOS">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Startmenüs für macOS: BaseBar Menu und Old Launchpad",
+      "description": "Vergleiche zwei eigenständige macOS-Apps zum Starten und Organisieren deiner Programme.",
+      "url": "https://shadow3561.github.io/",
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "BaseBar Menu",
+              "applicationCategory": "UtilitiesApplication",
+              "operatingSystem": "macOS 13 oder neuer",
+              "url": "https://shadow3561.github.io/basebar-menu/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "Old Launchpad",
+              "applicationCategory": "UtilitiesApplication",
+              "operatingSystem": "macOS 13 oder neuer",
+              "url": "https://shadow3561.github.io/old-launchpad/"
+            }
+          }
+        ]
+      }
+    }
+  </script>
+  <style>
     :root {
       color-scheme: dark;
-      --bg: #090d18;
-      --panel: #111827;
-      --text: #f5f7ff;
-      --muted: #a4aec4;
-      --line: rgba(205, 218, 255, .13);
-      --blue: #83aaff;
+      --bg: #111116;
+      --surface: #1b1b22;
+      --text: #f7f4f3;
+      --muted: #b7b2b4;
+      --line: rgba(255, 255, 255, .11);
+      --red: #f07b6c;
+      --blue: #a7c3ff;
       --mint: #a5f2d2;
       --max: 1120px;
     }
@@ -57,542 +70,295 @@
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
+      min-height: 100vh;
       margin: 0;
       background:
-        radial-gradient(ellipse at 82% 10%, rgba(80, 93, 196, .16), transparent 34rem),
-        radial-gradient(ellipse at 8% 35%, rgba(39, 124, 132, .09), transparent 32rem),
+        radial-gradient(ellipse at 18% 0, rgba(226, 95, 79, .16), transparent 34rem),
+        radial-gradient(ellipse at 87% 14%, rgba(80, 104, 199, .17), transparent 34rem),
         var(--bg);
       color: var(--text);
       font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       -webkit-font-smoothing: antialiased;
     }
 
-    a { color: inherit; text-decoration: none; }
-    button { font: inherit; }
-    .wrap { width: min(var(--max), calc(100% - 48px)); margin-inline: auto; }
+    a { color: inherit; }
+    .wrap { width: min(var(--max), calc(100% - 44px)); margin-inline: auto; }
+    .skip-link {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      z-index: 10;
+      padding: 10px 14px;
+      transform: translateY(-150%);
+      border-radius: 8px;
+      background: white;
+      color: #111;
+    }
+    .skip-link:focus { transform: translateY(0); }
     .topbar {
-      height: 82px;
       display: flex;
+      min-height: 78px;
       align-items: center;
       justify-content: space-between;
-      border-bottom: 1px solid rgba(205, 218, 255, .08);
+      gap: 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, .08);
     }
-    .brand { display: inline-flex; gap: 12px; align-items: center; font-weight: 650; letter-spacing: -.025em; }
-    .brand img { width: 34px; height: 34px; border-radius: 10px; }
-    .nav { display: flex; align-items: center; gap: 34px; color: #c1c9da; font-size: 14px; }
-    .nav a:not(.button):hover, .footer a:hover { color: white; }
-    .button {
-      min-height: 48px;
+    .brand {
       display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      color: var(--text);
+      font-size: 15px;
+      font-weight: 750;
+      letter-spacing: -.025em;
+      text-decoration: none;
+    }
+    .brand-mark {
+      display: grid;
+      width: 31px;
+      height: 31px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3px;
+      padding: 5px;
+      border: 1px solid rgba(255, 255, 255, .23);
+      border-radius: 9px;
+      background: linear-gradient(140deg, rgba(240, 123, 108, .5), rgba(131, 170, 255, .35));
+    }
+    .brand-mark i { border-radius: 2px; background: linear-gradient(135deg, var(--red), var(--blue)); }
+    .top-links { display: flex; flex-wrap: wrap; gap: 22px; color: #d6d2d3; font-size: 13px; }
+    .top-links a { text-decoration: none; }
+    .top-links a:hover { color: white; }
+    .hero { padding: 88px 0 42px; text-align: center; }
+    .eyebrow {
+      margin: 0 0 16px;
+      color: var(--mint);
+      font-size: 12px;
+      font-weight: 750;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+    h1 {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: clamp(42px, 7vw, 72px);
+      line-height: 1.04;
+      letter-spacing: -.065em;
+    }
+    .hero-copy {
+      max-width: 680px;
+      margin: 22px auto 0;
+      color: var(--muted);
+      font-size: clamp(16px, 2vw, 19px);
+    }
+    .apps {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+      padding: 25px 0 54px;
+    }
+    .app-card {
+      --accent: var(--red);
+      position: relative;
+      overflow: hidden;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: linear-gradient(150deg, rgba(240, 123, 108, .1), rgba(27, 27, 34, .94) 47%);
+      box-shadow: 0 22px 65px rgba(0, 0, 0, .22);
+    }
+    .app-card.launchpad {
+      --accent: var(--blue);
+      background: linear-gradient(150deg, rgba(115, 145, 236, .16), rgba(27, 27, 34, .94) 47%);
+    }
+    .card-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0;
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 750;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+    }
+    .card-label::before {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: currentColor;
+      box-shadow: 0 0 13px currentColor;
+      content: "";
+    }
+    .app-card h2 {
+      margin: 9px 0 8px;
+      font-size: clamp(26px, 4vw, 36px);
+      letter-spacing: -.045em;
+    }
+    .card-copy { min-height: 54px; margin: 0; color: var(--muted); font-size: 14px; }
+    .preview {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1.8;
+      margin: 20px 0;
+      border: 1px solid rgba(255, 255, 255, .14);
+      border-radius: 14px;
+      background: #111;
+      object-fit: cover;
+      object-position: center;
+    }
+    .feature-list {
+      display: grid;
+      gap: 9px;
+      margin: 0 0 22px;
+      padding: 0;
+      color: #e2dfe0;
+      font-size: 13px;
+      list-style: none;
+    }
+    .feature-list li { display: flex; gap: 10px; align-items: baseline; }
+    .feature-list li::before { color: var(--accent); content: "✓"; font-weight: 800; }
+    .card-action {
+      display: inline-flex;
+      min-height: 45px;
       align-items: center;
       justify-content: center;
       gap: 9px;
-      padding: 0 20px;
-      border: 1px solid transparent;
-      border-radius: 12px;
-      background: linear-gradient(135deg, #a5f2d2, #83c8f4);
-      color: #09131b;
-      font-size: 14px;
+      padding: 0 17px;
+      border: 1px solid rgba(255, 255, 255, .17);
+      border-radius: 11px;
+      background: rgba(255, 255, 255, .07);
+      color: white;
+      font-size: 13px;
       font-weight: 700;
-      box-shadow: 0 8px 28px rgba(109, 211, 195, .16);
-      transition: transform .18s ease, box-shadow .18s ease;
+      text-decoration: none;
+      transition: transform .18s ease, background .18s ease;
     }
-    .button:hover { transform: translateY(-2px); box-shadow: 0 12px 34px rgba(109, 211, 195, .24); }
-    .button.small { min-height: 40px; padding-inline: 16px; }
-    .button.secondary { color: var(--text); background: rgba(255,255,255,.045); border-color: var(--line); box-shadow: none; }
-    .button.secondary:hover { background: rgba(255,255,255,.08); }
-    .button.disabled {
-      cursor: not-allowed;
-      color: #8b95a9;
-      background: rgba(255,255,255,.06);
-      border-color: var(--line);
-      box-shadow: none;
-    }
-    .button.disabled:hover { transform: none; }
-    .mobile-toggle { display: none; }
-
-    .hero {
-      min-height: 650px;
+    .card-action:hover { transform: translateY(-2px); background: rgba(255, 255, 255, .12); }
+    .app-card:not(.launchpad) .card-action { border-color: transparent; background: linear-gradient(115deg, #ed6b60, #ed8b69); }
+    .app-card.launchpad .card-action { border-color: transparent; background: linear-gradient(135deg, #a5f2d2, #83c8f4); color: #09131b; }
+    .difference {
       display: grid;
-      grid-template-columns: 1.02fr .98fr;
+      grid-template-columns: 1fr auto 1fr;
       align-items: center;
-      gap: 52px;
-      padding-block: 74px 88px;
+      gap: 22px;
+      margin: 0 auto 76px;
+      padding: 23px 26px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, .035);
     }
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 9px;
-      color: var(--mint);
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-    }
-    .eyebrow::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--mint); box-shadow: 0 0 14px var(--mint); }
-    h1 { max-width: 610px; margin: 22px 0 20px; font-size: clamp(44px, 6vw, 72px); line-height: 1.02; letter-spacing: -.065em; }
-    h1 span { color: #a9c2ff; }
-    .hero-copy { max-width: 515px; margin: 0; color: var(--muted); font-size: 18px; line-height: 1.7; }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
-    .fineprint { margin-top: 17px; color: #8f9ab0; font-size: 12px; }
-    .fineprint span { padding-inline: 8px; color: #59667d; }
-
-    .preview-area { position: relative; perspective: 1000px; }
-    .glow {
-      position: absolute;
-      inset: 12% 4%;
-      border-radius: 50%;
-      background: #5274df;
-      filter: blur(100px);
-      opacity: .24;
-    }
-    .launchpad {
-      position: relative;
-      overflow: hidden;
-      padding: 19px 24px 21px;
-      border: 1px solid rgba(224, 235, 255, .37);
-      border-radius: 24px;
-      background:
-        linear-gradient(145deg, rgba(102, 150, 238, .62), rgba(54, 80, 151, .46) 45%, rgba(37, 46, 91, .62)),
-        rgba(59, 78, 140, .54);
-      box-shadow: 0 32px 95px rgba(0,0,0,.5), inset 0 1px rgba(255,255,255,.28);
-      backdrop-filter: blur(24px);
-      transform: rotateY(-7deg) rotateX(2deg);
-      animation: float 7s ease-in-out infinite;
-    }
-    .launchpad::before {
-      content: "";
-      position: absolute;
-      inset: -35% 20% auto;
-      height: 60%;
-      background: rgba(255,255,255,.23);
-      filter: blur(38px);
-      border-radius: 50%;
-      pointer-events: none;
-    }
-    .window-bar { position: relative; display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; color: rgba(255,255,255,.88); font-size: 12px; }
-    .traffic { display: flex; gap: 6px; }
-    .traffic i { width: 7px; height: 7px; border: 1px solid rgba(255,255,255,.52); border-radius: 50%; }
-    .window-title { position: absolute; left: 50%; transform: translateX(-50%); font-size: 11px; opacity: .8; }
-    .search { position: relative; width: min(230px, 78%); height: 27px; display: flex; align-items: center; justify-content: center; gap: 5px; margin: 0 auto 23px; padding: 6px 12px; border: 1px solid rgba(255,255,255,.22); border-radius: 20px; background: rgba(24,38,82,.27); color: rgba(255,255,255,.75); font-size: 10px; animation: search-focus 14s ease-in-out infinite; }
-    .search-placeholder { animation: placeholder-fade 14s ease-in-out infinite; }
-    .search-query { width: 0; overflow: hidden; color: white; font-weight: 600; white-space: nowrap; animation: type-query 14s steps(5, end) infinite; }
-    .app-grid { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); gap: 17px 9px; }
-    .app { display: grid; justify-items: center; gap: 6px; min-width: 0; color: #f6f7ff; font-size: 9px; text-shadow: 0 1px 5px rgba(0,0,0,.4); }
-    .app { animation: search-filter 14s ease-in-out infinite; }
-    .app.demo-match { animation-name: search-match; }
-    .demo-folder { opacity: 0; transform: scale(.7); animation: folder-appear 14s ease-in-out infinite !important; }
-    .demo-folder .app-icon { background: linear-gradient(145deg, rgba(226,240,255,.62), rgba(148,185,235,.25)); }
-    .folder-preview { width: 25px; height: 25px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; }
-    .folder-preview i { display: grid; place-items: center; border: 1px solid rgba(255,255,255,.5); border-radius: 4px; background: linear-gradient(145deg, var(--tile-a), var(--tile-b)); font-size: 8px; font-style: normal; }
-    .app-icon {
-      width: 49px;
-      aspect-ratio: 1;
+    .difference p { margin: 0; color: var(--muted); font-size: 13px; }
+    .difference b { display: block; margin-bottom: 4px; color: var(--text); font-size: 14px; }
+    .versus {
       display: grid;
+      width: 38px;
+      height: 38px;
       place-items: center;
-      border: 1px solid rgba(255,255,255,.65);
-      border-radius: 14px;
-      background: linear-gradient(145deg, var(--c1), var(--c2));
-      box-shadow: 0 5px 13px rgba(9,17,40,.35), inset 0 1px rgba(255,255,255,.48);
-      font-size: 22px;
-      line-height: 1;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      color: #c9c4c5;
+      font-size: 11px;
+      font-weight: 800;
     }
-    .app-name { overflow: hidden; max-width: 70px; text-overflow: ellipsis; white-space: nowrap; }
-    .page-dots { position: relative; display: flex; justify-content: center; gap: 5px; margin-top: 18px; }
-    .page-dots i { width: 4px; height: 4px; border-radius: 50%; background: rgba(255,255,255,.48); }
-    .page-dots i:first-child { width: 13px; border-radius: 8px; background: white; }
-    .demo-caption { position: relative; height: 15px; margin-top: 12px; color: rgba(255,255,255,.86); text-align: center; font-size: 10px; }
-    .demo-caption span { position: absolute; inset: 0; opacity: 0; animation: caption-cycle 14s ease-in-out infinite; }
-    .demo-caption span:nth-child(1) { animation-delay: 0s; }
-    .demo-caption span:nth-child(2) { animation-delay: 3.5s; }
-    .demo-caption span:nth-child(3) { animation-delay: 7s; }
-    .demo-caption span:nth-child(4) { animation-delay: 10.5s; }
-    .floating-note {
-      position: absolute;
-      right: -25px;
-      bottom: 28px;
-      display: flex;
-      align-items: center;
-      gap: 11px;
-      padding: 13px 16px;
-      border: 1px solid rgba(226,236,255,.16);
-      border-radius: 15px;
-      background: rgba(14,20,36,.88);
-      box-shadow: 0 14px 44px rgba(0,0,0,.35);
+    .footer {
+      padding: 24px 0 34px;
+      border-top: 1px solid rgba(255, 255, 255, .08);
+      color: #969194;
       font-size: 12px;
-      backdrop-filter: blur(16px);
     }
-    .floating-note b { display: block; font-size: 13px; }
-    .floating-note span { color: var(--muted); }
-    .note-icon { width: 32px; height: 32px; display: grid; place-items: center; border-radius: 10px; background: rgba(165,242,210,.12); color: var(--mint); font-size: 17px; }
-    @keyframes float { 0%, 100% { transform: rotateY(-7deg) rotateX(2deg) translateY(0); } 50% { transform: rotateY(-7deg) rotateX(2deg) translateY(-9px); } }
-    @keyframes type-query {
-      0%, 12% { width: 0; }
-      25%, 51% { width: 5ch; }
-      64%, 100% { width: 0; }
-    }
-    @keyframes placeholder-fade { 0%, 13%, 64%, 100% { opacity: 1; } 19%, 57% { opacity: 0; } }
-    @keyframes search-focus {
-      0%, 14%, 60%, 100% { border-color: rgba(255,255,255,.22); box-shadow: none; }
-      20%, 55% { border-color: rgba(165,242,210,.8); box-shadow: 0 0 15px rgba(165,242,210,.22); }
-    }
-    @keyframes search-filter {
-      0%, 18%, 47%, 100% { opacity: 1; filter: none; transform: scale(1); }
-      27%, 40% { opacity: .2; filter: blur(1px); transform: scale(.94); }
-    }
-    @keyframes search-match {
-      0%, 18%, 47%, 64%, 100% { opacity: 1; filter: none; transform: scale(1); }
-      27%, 40% { opacity: 1; filter: none; transform: scale(1.08); }
-      53% { transform: scale(1.16); }
-      59% { opacity: .25; transform: scale(.78); }
-    }
-    @keyframes folder-appear {
-      0%, 64%, 100% { opacity: 0; transform: scale(.7); }
-      70%, 91% { opacity: 1; transform: scale(1); }
-    }
-    @keyframes caption-cycle {
-      0%, 20% { opacity: 1; }
-      24%, 100% { opacity: 0; }
-    }
+    .footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; }
+    .footer p { margin: 0; }
+    .legal-links { display: flex; flex-wrap: wrap; gap: 9px 18px; }
+    .legal-links a { color: inherit; text-decoration: none; }
+    .legal-links a:hover { color: white; }
+    :focus-visible { outline: 2px solid white; outline-offset: 4px; }
 
-    .trust-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 22px 54px; padding: 25px 0 29px; border-block: 1px solid var(--line); color: #bac4d7; font-size: 13px; }
-    .trust-row span { display: inline-flex; align-items: center; gap: 9px; }
-    .check { color: var(--mint); font-size: 16px; }
-    section.content { padding-block: 100px; }
-    .section-heading { max-width: 630px; margin: 0 auto 48px; text-align: center; }
-    .section-heading h2 { margin: 14px 0 11px; font-size: clamp(32px, 4vw, 46px); line-height: 1.1; letter-spacing: -.05em; }
-    .section-heading p { margin: 0; color: var(--muted); }
-    .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
-    .feature {
-      min-height: 207px;
-      padding: 24px;
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      background: linear-gradient(145deg, rgba(255,255,255,.045), rgba(255,255,255,.015));
+    @media (max-width: 760px) {
+      .hero { padding-top: 65px; }
+      .apps { grid-template-columns: 1fr; max-width: 580px; margin-inline: auto; }
+      .card-copy { min-height: 0; }
+      .difference { grid-template-columns: 1fr; gap: 14px; margin-bottom: 58px; }
+      .versus { justify-self: center; }
     }
-    .feature-icon { width: 39px; height: 39px; display: grid; place-items: center; margin-bottom: 20px; border: 1px solid rgba(131,170,255,.2); border-radius: 12px; background: rgba(131,170,255,.09); color: #b6cbff; font-size: 18px; }
-    .feature h3 { margin: 0 0 7px; font-size: 16px; letter-spacing: -.02em; }
-    .feature p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
-
-    .how {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      gap: 65px;
-      padding: 43px;
-      border: 1px solid var(--line);
-      border-radius: 24px;
-      background: linear-gradient(135deg, rgba(92,112,190,.12), rgba(255,255,255,.025));
-    }
-    .how h2 { margin: 13px 0; font-size: clamp(30px, 4vw, 43px); line-height: 1.1; letter-spacing: -.05em; }
-    .how p { color: var(--muted); }
-    .steps { display: grid; gap: 21px; }
-    .step { display: grid; grid-template-columns: 38px 1fr; gap: 13px; align-items: start; }
-    .step-number { width: 34px; height: 34px; display: grid; place-items: center; border: 1px solid rgba(165,242,210,.22); border-radius: 11px; background: rgba(165,242,210,.08); color: var(--mint); font-size: 13px; font-weight: 700; }
-    .step b { display: block; margin: 2px 0 3px; font-size: 14px; }
-    .step span:last-child { color: var(--muted); font-size: 13px; }
-
-    .pricing { display: grid; grid-template-columns: 1fr minmax(290px, 390px); align-items: center; gap: 40px; }
-    .pricing-copy h2 { margin: 13px 0; font-size: clamp(34px, 4.5vw, 52px); line-height: 1.08; letter-spacing: -.055em; }
-    .pricing-copy p { max-width: 480px; color: var(--muted); }
-    .price-card { padding: 27px; border: 1px solid rgba(165,242,210,.26); border-radius: 20px; background: linear-gradient(145deg, rgba(165,242,210,.08), rgba(131,170,255,.06)); }
-    .price-label { color: #c5cedf; font-size: 13px; }
-    .price { margin: 8px 0 2px; font-size: 50px; font-weight: 720; line-height: 1.1; letter-spacing: -.06em; }
-    .price-detail { color: var(--muted); font-size: 13px; }
-    .price-list { display: grid; gap: 9px; margin: 20px 0 22px; padding: 0; list-style: none; color: #d7deeb; font-size: 13px; }
-    .price-list li { display: flex; gap: 9px; }
-    .price-card .button { width: 100%; }
-    .purchase-options { display: grid; gap: 10px; }
-    .purchase-heading { margin: 0 0 12px; color: #d7deeb; font-size: 13px; font-weight: 600; }
-    .checkout-note { margin: 11px 0 0; color: #98a4ba; font-size: 11px; text-align: center; }
-    .download-link { display: inline-block; margin-top: 14px; color: var(--mint); font-size: 13px; }
-    .download-link:hover { text-decoration: underline; }
-
-    .faq { display: grid; max-width: 760px; margin: 0 auto; border-top: 1px solid var(--line); }
-    details { border-bottom: 1px solid var(--line); }
-    summary { position: relative; padding: 19px 34px 19px 0; cursor: pointer; list-style: none; font-size: 15px; font-weight: 600; }
-    summary::-webkit-details-marker { display: none; }
-    summary::after { content: "+"; position: absolute; right: 3px; top: 16px; color: var(--mint); font-size: 20px; font-weight: 400; }
-    details[open] summary::after { content: "−"; }
-    details p { margin: -4px 35px 20px 0; color: var(--muted); font-size: 14px; }
-    .footer { padding: 25px 0 33px; border-top: 1px solid var(--line); color: #8995aa; font-size: 12px; }
-    .footer-inner { display: flex; justify-content: space-between; gap: 20px; }
-    .footer-links { display: flex; flex-wrap: wrap; gap: 8px 16px; }
-    .footer-links a { color: inherit; text-decoration: none; }
-    .footer-links a:hover { color: var(--mint); }
-
-    @media (max-width: 850px) {
-      .hero { grid-template-columns: 1fr; gap: 56px; padding-top: 67px; }
-      .hero-copy { max-width: 610px; }
-      .preview-area { width: min(540px, 90%); margin-inline: auto; }
-      .features { grid-template-columns: repeat(2, 1fr); }
-      .how { gap: 30px; padding: 30px; }
-    }
-    @media (max-width: 600px) {
-      .wrap { width: min(100% - 34px, var(--max)); }
-      .topbar { height: 70px; }
-      .mobile-toggle { display: inline-grid; place-items: center; width: 40px; height: 40px; border: 1px solid var(--line); border-radius: 11px; background: transparent; color: white; font-size: 19px; }
-      .nav {
-        position: absolute;
-        z-index: 4;
-        top: 62px;
-        right: 17px;
-        left: 17px;
-        display: none;
-        align-items: stretch;
-        gap: 0;
-        padding: 9px;
-        border: 1px solid var(--line);
-        border-radius: 15px;
-        background: #111827;
-        box-shadow: 0 15px 40px rgba(0,0,0,.35);
-      }
-      .nav.open { display: grid; }
-      .nav a { padding: 12px; }
-      .nav .button { margin-top: 4px; }
-      .hero { min-height: 0; padding-block: 65px 72px; }
-      h1 { font-size: clamp(43px, 12vw, 62px); }
-      .hero-copy { font-size: 16px; }
-      .hero-actions { display: grid; }
-      .hero-actions .button { width: 100%; }
-      .preview-area { width: 95%; }
-      .launchpad { padding: 17px 17px 19px; border-radius: 19px; }
-      .app-grid { gap: 14px 4px; }
-      .app-icon { width: clamp(39px, 11vw, 49px); border-radius: 12px; font-size: 19px; }
-      .floating-note { right: -7px; bottom: -27px; }
-      .trust-row { justify-content: flex-start; gap: 13px 24px; font-size: 12px; }
-      section.content { padding-block: 74px; }
-      .features { grid-template-columns: 1fr; }
-      .feature { min-height: 0; }
-      .how, .pricing { grid-template-columns: 1fr; }
-      .how { gap: 24px; padding: 25px; }
-      .pricing { gap: 24px; }
-      .footer-inner { flex-direction: column; }
+    @media (max-width: 500px) {
+      .wrap { width: min(100% - 32px, var(--max)); }
+      .topbar { min-height: 68px; }
+      .top-links { gap: 11px; font-size: 11px; }
+      .hero { padding-top: 55px; }
+      .app-card { padding: 18px; border-radius: 18px; }
+      .preview { aspect-ratio: 1.45; }
     }
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
-      .app { animation: none !important; opacity: 1; filter: none; transform: none; }
-      .demo-folder { opacity: 1; transform: none; }
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
     }
-  
-    /* Sprachumschalter (Ergänzung) */
-    .topbar .language-control { margin-left:12px; }
-    #language-switcher { background:#172238; color:#f5f7ff; border:1px solid rgba(205,218,255,.28); border-radius:10px; padding:9px 12px; font:inherit; font-size:13px; cursor:pointer; }
-    @media(max-width:600px) { .topbar .language-control { margin-left:auto; } #language-switcher { max-width:135px; padding:7px 5px; } }
   </style>
 </head>
 <body>
-<header class="wrap topbar">
-<a aria-label="Old Launchpad Startseite" class="brand" data-i18n-attr="aria-label:homeLabel" href="#">
-<img alt="" src="assets/old-launchpad-icon.png"/>
-<span>Old Launchpad</span>
-</a>
-<button aria-controls="main-nav" aria-expanded="false" aria-label="Menü öffnen" class="mobile-toggle" data-i18n-attr="aria-label:menuOpen" type="button">☰</button>
-<nav aria-label="Hauptnavigation" class="nav" data-i18n-attr="aria-label:mainNavigation" id="main-nav">
-<a data-i18n="navBenefits" href="#vorteile">Vorteile</a>
-<a data-i18n="navHow" href="#so-gehts">So funktioniert's</a>
-<a data-i18n="navTrial" href="#probeversion">Probeversion</a>
-<a data-i18n="navPrice" href="#kaufen">Preis</a>
-<a class="button small" data-i18n="buyTop" href="#kaufen">Jetzt kaufen · 8,99 € <span aria-hidden="true">↗</span></a>
-</nav>
-<div class="language-control"><select aria-label="Sprache auswählen" data-i18n-attr="aria-label:languageLabel" id="language-switcher"><option value="de">🇩🇪 Deutsch</option><option value="en">🇬🇧 English</option><option value="fr">🇫🇷 Français</option><option value="es">🇪🇸 Español</option></select></div></header>
-<main>
-<section class="wrap hero">
-<div>
-<div class="eyebrow" data-i18n="heroEyebrow">Das vertraute Launchpad ist zurück</div>
-<h1 data-i18n="heroTitle">Deine Apps.<br/><span>Wieder auf einen Blick.</span></h1>
-<p class="hero-copy" data-i18n="heroCopy">Ein aufgeräumtes Raster. Deine Lieblings-Apps sofort griffbereit. Old Launchpad bringt das einfache, vertraute App-Launchpad zurück auf deinen Mac.</p>
-<div class="hero-actions">
-<a class="button" data-i18n="buyHero" href="#kaufen">Jetzt kaufen · 8,99 € <span aria-hidden="true">→</span></a>
-<a class="button secondary" data-i18n="tryHero" href="https://github.com/Shadow3561/old-launchpad/releases/latest/download/Old-Launchpad-30-Tage-Test.zip">30 Tage kostenlos testen <span aria-hidden="true">↓</span></a>
-</div>
-<p class="fineprint" data-i18n="heroFineprint">30 Tage gratis <span>·</span> danach einmalig 8,99 € <span>·</span> kein Abo</p>
-</div>
-<div aria-label="Vorschau des Old Launchpad App-Rasters" class="preview-area" data-i18n-attr="aria-label:previewLabel">
-<div class="glow"></div>
-<div class="launchpad">
-<div class="window-bar">
-<span class="traffic"><i></i><i></i><i></i></span>
-<span class="window-title">Old Launchpad</span>
-<span aria-hidden="true">⚙</span>
-</div>
-<div aria-hidden="true" class="search"><span>⌕</span><span class="search-placeholder" data-i18n="demoSearch">Apps suchen</span><span class="search-query" data-i18n="demoQuery">Fotos</span></div>
-<div class="app-grid">
-<div class="app"><span class="app-icon" style="--c1:#a9d8ff;--c2:#3387e8">✉</span><span class="app-name" data-i18n="appMail">Mail</span></div>
-<div class="app demo-match"><span class="app-icon" style="--c1:#b7aaff;--c2:#6447cc">✦</span><span class="app-name" data-i18n="demoQuery">Fotos</span></div>
-<div class="app"><span class="app-icon" style="--c1:#ffc3b1;--c2:#e75f47">♫</span><span class="app-name" data-i18n="appMusic">Musik</span></div>
-<div class="app"><span class="app-icon" style="--c1:#b6edda;--c2:#34a77e">◉</span><span class="app-name">Safari</span></div>
-<div class="app"><span class="app-icon" style="--c1:#c7e9ff;--c2:#528bd2">▦</span><span class="app-name" data-i18n="appCalendar">Kalender</span></div>
-<div class="app"><span class="app-icon" style="--c1:#ffdf91;--c2:#e89b32">☀</span><span class="app-name" data-i18n="appNotes">Notizen</span></div>
-<div class="app"><span class="app-icon" style="--c1:#ffc0d0;--c2:#dd4e82">▣</span><span class="app-name" data-i18n="appMessages">Nachrichten</span></div>
-<div class="app"><span class="app-icon" style="--c1:#d3d9e8;--c2:#70809f">⌘</span><span class="app-name" data-i18n="appSettings">Einstellungen</span></div>
-<div class="app"><span class="app-icon" style="--c1:#f6cb83;--c2:#cb7b37">◷</span><span class="app-name" data-i18n="appClock">Uhr</span></div>
-<div class="app"><span class="app-icon" style="--c1:#b2e2f5;--c2:#4687bc">☁</span><span class="app-name" data-i18n="appWeather">Wetter</span></div>
-<div class="app"><span class="app-icon" style="--c1:#ddaaff;--c2:#874db9">⌁</span><span class="app-name" data-i18n="appPodcasts">Podcasts</span></div>
-<div class="app demo-folder"><span class="app-icon"><span aria-hidden="true" class="folder-preview"><i style="--tile-a:#d9b7ff;--tile-b:#8c62c6">✦</i><i style="--tile-a:#ffc2cb;--tile-b:#d8617b">▣</i><i style="--tile-a:#a9d8ff;--tile-b:#4985d1">♫</i><i style="--tile-a:#b6edda;--tile-b:#429979">⌘</i></span></span><span class="app-name" data-i18n="appDesign">Design</span></div>
-</div>
-<div class="page-dots"><i></i><i></i><i></i></div>
-<div aria-hidden="true" class="demo-caption">
-<span data-i18n="captionAll">Alle Apps übersichtlich sortiert</span>
-<span data-i18n="captionSearch">Suche findet deine App sofort</span>
-<span data-i18n="captionLaunch">Ein Klick – und die App startet</span>
-<span data-i18n="captionFolders">Apps in eigenen Ordnern gruppieren</span>
-</div>
-</div>
-<div class="floating-note"><span class="note-icon">⌕</span><span><b data-i18n="noteTitle">Alles sofort finden</b><span data-i18n="noteCopy">Tippen. Finden. Öffnen.</span></span></div>
-</div>
-</section>
-<div aria-label="Produktmerkmale" class="wrap trust-row" data-i18n-attr="aria-label:productFeatures">
-<span><b class="check">✓</b> Native macOS-App</span>
-<span><b class="check">✓</b> Deine Apps, dein Raster</span>
-<span><b class="check">✓</b> Einmal zahlen, dauerhaft nutzen</span>
-</div>
-<section class="wrap content" id="vorteile">
-<div class="section-heading">
-<div class="eyebrow" data-i18n="featuresEyebrow">Weniger suchen, mehr starten</div>
-<h2 data-i18n="featuresTitle">Ein Launchpad, das sich<br/>nach deinem Mac anfühlt.</h2>
-<p data-i18n="featuresIntro">Vertraute Bedienung, liebevolle Details und genau die Übersicht, die im Alltag gefehlt hat.</p>
-</div>
-<div class="features">
-<article class="feature">
-<div class="feature-icon">⌕</div>
-<h3 data-i18n="featureFindTitle">Sofort finden</h3>
-<p data-i18n="featureFindCopy">Suche deine installierten Programme und starte sie direkt – ohne dich durch Ordner zu klicken.</p>
-</article>
-<article class="feature">
-<div class="feature-icon">⠿</div>
-<h3 data-i18n="featureOrganizeTitle">Ordne es, wie du willst</h3>
-<p data-i18n="featureOrganizeCopy">Apps ziehen, sortieren und in Ordner gruppieren. Deine Anordnung bleibt auch nach dem Neustart erhalten.</p>
-</article>
-<article class="feature">
-<div class="feature-icon">◫</div>
-<h3 data-i18n="featureCustomizeTitle">Dein Look, deine Größe</h3>
-<p data-i18n="featureCustomizeCopy">Wähle Symbolgröße, Hintergrund, Transparenz und Rasterreihen passend zu deinem Bildschirm.</p>
-</article>
-<article class="feature">
-<div class="feature-icon">↔</div>
-<h3 data-i18n="featurePagesTitle">Seiten, die mitdenken</h3>
-<p data-i18n="featurePagesCopy">Wechsle per Wischgeste zwischen Seiten. Beim Ziehen kannst du Apps sogar direkt auf die nächste Seite bewegen.</p>
-</article>
-<article class="feature">
-<div class="feature-icon">✧</div>
-<h3 data-i18n="featureMacTitle">Mit macOS im Einklang</h3>
-<p data-i18n="featureMacCopy">Originale App-Symbole, native Bedienung und eine Animation, die sich an deinen Dock-Effekt anpasst.</p>
-</article>
-<article class="feature">
-<div class="feature-icon">⌘</div>
-<h3 data-i18n="featureReadyTitle">Einfach startklar</h3>
-<p data-i18n="featureReadyCopy">Eine schlanke native App für macOS 13 oder neuer – ohne zusätzliche Pakete oder komplizierte Einrichtung.</p>
-</article>
-</div>
-</section>
-<section class="wrap content" id="so-gehts">
-<div class="how">
-<div>
-<div class="eyebrow" data-i18n="howEyebrow">In wenigen Augenblicken</div>
-<h2 data-i18n="howTitle">Installieren.<br/>Öffnen. Loslegen.</h2>
-<p data-i18n="howCopy">Deine installierten Apps erscheinen direkt im Launchpad. Teste alle Funktionen 30 Tage lang und entscheide danach, ob du es für einmalig 8,99 € dauerhaft freischalten möchtest.</p>
-<a class="button secondary" data-i18n="downloadTrial" href="https://github.com/Shadow3561/old-launchpad/releases/latest/download/Old-Launchpad-30-Tage-Test.zip">Probeversion herunterladen <span aria-hidden="true">↓</span></a>
-</div>
-<div class="steps">
-<div class="step"><span class="step-number">01</span><span><b data-i18n="stepDownloadTitle">Herunterladen</b><span data-i18n="stepDownloadCopy">Lade Old Launchpad für deinen Mac herunter.</span></span></div>
-<div class="step"><span class="step-number">02</span><span><b data-i18n="stepDiscoverTitle">Apps entdecken</b><span data-i18n="stepDiscoverCopy">Deine installierten Programme erscheinen übersichtlich im Raster.</span></span></div>
-<div class="step"><span class="step-number">03</span><span><b data-i18n="stepCustomizeTitle">Dein Launchpad gestalten</b><span data-i18n="stepCustomizeCopy">Ordne Apps, erstelle Ordner und passe das Erscheinungsbild an.</span></span></div>
-</div>
-</div>
-</section>
-<section class="wrap content pricing" id="kaufen">
-<div class="pricing-copy">
-<div class="eyebrow" data-i18n="pricingEyebrow">Ein fairer Preis. Kein Abo.</div>
-<h2 data-i18n="pricingTitle">30 Tage ausprobieren.<br/>Dann entscheiden.</h2>
-<p data-i18n="pricingCopy">Teste alle Funktionen 30 Tage lang kostenlos. Danach kannst du Old Launchpad mit einer einmaligen Zahlung von 8,99 € dauerhaft freischalten.</p>
-</div>
-<div class="price-card">
-<div class="price-label" data-i18n="priceLabel">Old Launchpad · Einzellizenz</div>
-<div class="price">8,99 €</div>
-<div class="price-detail" data-i18n="priceDetail">einmalig · kein Abo</div>
-<ul class="price-list">
-<li><span class="check">✓</span> 30 Tage kostenlos testen</li>
-<li><span class="check">✓</span> Alle Funktionen inklusive</li>
-<li><span class="check">✓</span> Einmal zahlen, dauerhaft nutzen</li>
-</ul>
-<p class="purchase-heading" data-i18n="chooseStore">Kaufplattform auswählen</p>
-<div class="purchase-options">
-<a class="button" data-i18n="buyLemon" href="https://old-launchpad.lemonsqueezy.com/checkout/buy/937768e9-7a15-4015-b7bd-3229686c771f">Bei Lemon Squeezy kaufen ↗</a>
-<a class="button secondary" data-i18n="buyGumroad" href="https://wudani.gumroad.com/l/tvkggm">Bei Gumroad kaufen ↗</a>
-<a class="button secondary" data-i18n="buyPolar" href="https://buy.polar.sh/polar_cl_kl74XQ08DD9RmHDPItgjtgBaBwxxdz4n9e8u10Xxkff">Bei Polar kaufen ↗</a>
-</div>
-<p class="checkout-note" data-i18n="purchaseLicenseNote">Lade nach dem Kauf die App der gewählten Plattform herunter und wähle diese bei der Lizenzaktivierung aus.</p>
-<p class="checkout-note" data-i18n="checkoutNote">Einmalige Zahlung · Kein Abo</p>
-<a class="download-link" data-i18n="tryInstead" href="https://github.com/Shadow3561/old-launchpad/releases/latest/download/Old-Launchpad-30-Tage-Test.zip">Oder erst 30 Tage kostenlos testen ↓</a>
-</div>
-</section>
-<section class="wrap content" id="faq">
-<div class="section-heading">
-<div class="eyebrow" data-i18n="faqEyebrow">Gut zu wissen</div>
-<h2 data-i18n="faqTitle">Häufige Fragen</h2>
-</div>
-<div class="faq">
-<details>
-<summary data-i18n="faqOsQuestion">Welche macOS-Version brauche ich?</summary>
-<p data-i18n="faqOsAnswer">Old Launchpad benötigt macOS 13 oder neuer.</p>
-</details>
-<details>
-<summary data-i18n="faqTrialQuestion">Wie funktioniert die Probeversion?</summary>
-<p data-i18n="faqTrialAnswer">Die Probeversion enthält alle Funktionen und kann 30 Tage kostenlos genutzt werden. Die Frist beginnt beim ersten Start der App. Danach kannst du sie mit einer einmaligen Zahlung von 8,99 € dauerhaft freischalten.</p>
-</details>
-<details>
-<summary data-i18n="faqAppsQuestion">Wo finde ich meine installierten Apps?</summary>
-<p data-i18n="faqAppsAnswer">Old Launchpad liest Programme aus den üblichen macOS-Programmordnern und zeigt sie in einem durchsuchbaren Raster an.</p>
-</details>
-<details>
-<summary data-i18n="faqSubscriptionQuestion">Ist ein Abo erforderlich?</summary>
-<p data-i18n="faqSubscriptionAnswer">Nein. Die Lizenz kostet einmalig 8,99 € – es gibt kein Abo.</p>
-</details>
-</div>
-</section>
-<section class="wrap content" id="probeversion" style="padding-top:0">
-<div class="section-heading">
-<div class="eyebrow" data-i18n="trialEyebrow">30 Tage kostenlos ausprobieren</div>
-<h2 data-i18n="trialTitle">Erst testen.<br/>Dann in Ruhe entscheiden.</h2>
-<p data-i18n="trialCopy">Alle Funktionen inklusive. Nach 30 Tagen kannst du Old Launchpad für einmalig 8,99 € dauerhaft freischalten.</p>
-<div style="margin-top:24px">
-<a class="button" data-i18n="downloadTrial" href="https://github.com/Shadow3561/old-launchpad/releases/latest/download/Old-Launchpad-30-Tage-Test.zip">Probeversion herunterladen <span aria-hidden="true">↓</span></a>
-</div>
-<p class="fineprint" data-i18n="trialFineprint">macOS 13 oder neuer <span>·</span> Keine Zahlungsdaten für den Test</p>
-<p><a class="download-link" data-i18n="buyDirect" href="#kaufen">Oder direkt kaufen · einmalig 8,99 €</a></p>
-</div>
-</section>
-</main>
-<footer class="footer">
-<div class="wrap footer-inner">
-<span>© 2026 Old Launchpad</span>
-<span data-i18n="footerTagline">Ein kleines Launchpad für deinen Mac.</span>
-<span class="footer-links">
-<a data-i18n="footerImprint" href="impressum.html">Impressum</a>
-<a data-i18n="footerPrivacy" href="datenschutz.html">Datenschutz</a>
-<a data-i18n="footerConsumer" href="verbraucherinformationen.html">Verbraucherinformationen</a>
-<a data-i18n="footerLicense" href="lizenzbedingungen.html">Lizenzbedingungen</a>
-</span>
-</div>
-</footer>
-<script>
-    const menuButton = document.querySelector(".mobile-toggle");
-    const navigation = document.querySelector("#main-nav");
+  <a class="skip-link" href="#apps">Zu den Apps</a>
+  <header class="wrap topbar">
+    <a class="brand" href="./" aria-label="Startseite BaseBar Menu und Old Launchpad">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      Startmenüs für macOS
+    </a>
+    <nav class="top-links" aria-label="Apps">
+      <a href="basebar-menu/">BaseBar Menu</a>
+      <a href="old-launchpad/">Old Launchpad</a>
+    </nav>
+  </header>
 
-    menuButton.addEventListener("click", () => {
-      const isOpen = navigation.classList.toggle("open");
-      menuButton.setAttribute("aria-expanded", String(isOpen));
-      menuButton.setAttribute("aria-label", isOpen ? translations[document.documentElement.lang].menuClose : translations[document.documentElement.lang].menuOpen);
-    });
+  <main>
+    <section class="wrap hero" aria-labelledby="page-title">
+      <p class="eyebrow">Zwei Apps. Zwei Arbeitsweisen.</p>
+      <h1 id="page-title">Finde den Start,<br>der zu dir passt.</h1>
+      <p class="hero-copy">Beide Apps helfen dir, Programme auf dem Mac schnell zu finden und zu öffnen. Wähle zwischen einem flexiblen Startmenü mit Systemzugriffen und einem vertrauten App-Raster.</p>
+    </section>
 
-    navigation.addEventListener("click", (event) => {
-      if (event.target.closest("a")) {
-        navigation.classList.remove("open");
-        menuButton.setAttribute("aria-expanded", "false");
-        menuButton.setAttribute("aria-label", translations[document.documentElement.lang].menuOpen);
-      }
-    });
-  </script>
-<script defer="True" src="languages.js"></script></body>
+    <section class="wrap apps" id="apps" aria-label="Die beiden macOS-Apps">
+      <article class="app-card" aria-labelledby="basebar-title">
+        <p class="card-label">Startmenü für den Alltag</p>
+        <h2 id="basebar-title">BaseBar Menu</h2>
+        <p class="card-copy">Ein Windows-inspiriertes Startmenü, das du über das Dock, die Menüleiste oder beides steuerst – mit Suche, App-Gruppen und schnellen Systemzugriffen.</p>
+        <img class="preview" src="basebar-menu/store-assets/BaseBarMenu-Product-Collage.png" alt="Ansichten von BaseBar Menu mit Programmen, Suche und Einstellungen" loading="lazy">
+        <ul class="feature-list">
+          <li>Apps suchen, gruppieren und sortieren</li>
+          <li>macOS-Systemeinstellungen direkt öffnen</li>
+          <li>Laufende Apps beenden oder sofort beenden</li>
+          <li>Dock-Menü mit Anzeigeart, Sprache und Autostart</li>
+        </ul>
+        <a class="card-action" href="basebar-menu/">BaseBar Menu entdecken <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="app-card launchpad" aria-labelledby="launchpad-title">
+        <p class="card-label">Das klassische App-Raster</p>
+        <h2 id="launchpad-title">Old Launchpad</h2>
+        <p class="card-copy">Die vertraute Übersicht deiner installierten Apps – als anpassbares Raster mit Seiten, Ordnern und Drag-and-drop.</p>
+        <img class="preview" src="old-launchpad/store-assets/image.png" alt="Vorschau des Old Launchpad App-Rasters" loading="lazy">
+        <ul class="feature-list">
+          <li>Apps visuell im Raster finden und starten</li>
+          <li>Symbole ziehen, sortieren und in Ordner legen</li>
+          <li>Zwischen Seiten wechseln und das Raster anpassen</li>
+          <li>30 Tage testen, danach einmalig 8,99 €</li>
+        </ul>
+        <a class="card-action" href="old-launchpad/">Old Launchpad entdecken <span aria-hidden="true">→</span></a>
+      </article>
+    </section>
+
+    <section class="wrap difference" aria-label="Unterschiede der Apps">
+      <p><b>BaseBar Menu</b>Wenn du Apps, Gruppen, Systemeinstellungen und laufende Programme an einem zentralen Ort erreichen möchtest.</p>
+      <span class="versus" aria-hidden="true">ODER</span>
+      <p><b>Old Launchpad</b>Wenn du deine Apps lieber in einem visuellen Raster mit Ordnern und Seiten durchstöberst.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 · BaseBar Menu &amp; Old Launchpad</p>
+      <nav class="legal-links" aria-label="Rechtliches">
+        <a href="basebar-menu/impressum.html">Impressum</a>
+        <a href="basebar-menu/datenschutz.html">Datenschutz · BaseBar Menu</a>
+        <a href="old-launchpad/datenschutz.html">Datenschutz · Old Launchpad</a>
+      </nav>
+    </div>
+  </footer>
+</body>
 </html>
