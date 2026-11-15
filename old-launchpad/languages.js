@@ -409,6 +409,7 @@ const legalTranslations = {
     privacyHosting3: "Further information: <a href=\"https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages\">GitHub Pages</a> and <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\">GitHub’s Privacy Statement</a>.",
     privacy3Title: "3. Cookies, analytics and external content",
     privacyCookies1: "As reviewed, the current source code of this website uses no analytics or advertising trackers, external fonts, embedded videos or contact form. Animations and navigation use locally embedded CSS and JavaScript. While this remains the case, we do not set any non-essential analytics or marketing cookies. If you manually select a language, it is passed between internal pages in the `lang` URL parameter; the website does not store the language choice in cookies or local browser storage.",
+    privacyBrowserLanguage: "If there is no supported `lang` URL parameter, the website selects the first supported language in your browser preferences. This selection happens locally in your browser and is not stored in cookies or local storage. A language you select manually is included as the `lang` URL parameter on internal pages and therefore forms part of the request sent to GitHub Pages.",
     privacyCookies2: "Links to GitHub and Lemon Squeezy are ordinary external links. Your browser contacts the respective provider only when you open such a link; that provider’s privacy information then applies.",
     privacy4Title: "4. Purchases through Lemon Squeezy",
     privacyCheckout1: "If you choose Lemon Squeezy, its checkout is provided by Lemon Squeezy. In its Buyer Terms, Lemon Squeezy describes itself as the Merchant of Record and an authorized reseller. The checkout opens as an external Lemon Squeezy page only after you click its purchase link; it is not embedded in this website. Merely visiting our website therefore does not transmit checkout or payment data to Lemon Squeezy.",
@@ -483,6 +484,7 @@ const legalTranslations = {
     privacyHosting3: "Pour en savoir plus : <a href=\"https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages\">GitHub Pages</a> et <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\">la déclaration de confidentialité de GitHub</a>.",
     privacy3Title: "3. Cookies, analyse et contenus externes",
     privacyCookies1: "Après vérification, le code source actuel de ce site n’utilise aucun outil de suivi analytique ou publicitaire, aucune police externe, aucune vidéo intégrée et aucun formulaire de contact. Les animations et la navigation utilisent du CSS et du JavaScript intégrés localement. Tant que cela reste le cas, nous ne déposons aucun cookie d’analyse ou de marketing non essentiel. Si vous choisissez manuellement une langue, elle est transmise aux pages internes au moyen du paramètre d’URL `lang` ; le site ne stocke pas ce choix dans des cookies ni dans le stockage local du navigateur.",
+    privacyBrowserLanguage: "En l’absence d’un paramètre d’URL `lang` pris en charge, le site sélectionne la première langue prise en charge dans les préférences de votre navigateur. Ce choix est effectué localement dans le navigateur et n’est enregistré ni dans des cookies ni dans le stockage local. La langue choisie manuellement est transmise aux pages internes dans le paramètre d’URL `lang` et fait donc partie de la requête adressée à GitHub Pages.",
     privacyCookies2: "Les liens vers GitHub et Lemon Squeezy sont des liens externes classiques. Votre navigateur ne contacte le fournisseur concerné que lorsque vous ouvrez un tel lien ; ses informations de confidentialité s’appliquent alors.",
     privacy4Title: "4. Achats via Lemon Squeezy",
     privacyCheckout1: "Si vous choisissez Lemon Squeezy, le paiement est fourni par Lemon Squeezy. Dans ses Buyer Terms, Lemon Squeezy se décrit comme Merchant of Record et revendeur agréé. La page de paiement ne s’ouvre qu’après un clic sur son lien d’achat, sur une page externe de Lemon Squeezy ; elle n’est pas intégrée à ce site. La simple visite de notre site ne transmet donc aucune donnée de paiement ou de commande à Lemon Squeezy.",
@@ -557,6 +559,7 @@ const legalTranslations = {
     privacyHosting3: "Más información: <a href=\"https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages\">GitHub Pages</a> y la <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\">Declaración de privacidad de GitHub</a>.",
     privacy3Title: "3. Cookies, análisis y contenido externo",
     privacyCookies1: "Según la revisión, el código fuente actual de este sitio no utiliza rastreadores analíticos ni publicitarios, fuentes externas, vídeos incrustados ni formularios de contacto. Las animaciones y la navegación utilizan CSS y JavaScript integrados localmente. Mientras esto siga siendo así, no instalamos cookies no esenciales de análisis o marketing. Si seleccionas un idioma manualmente, se transmite entre las páginas internas mediante el parámetro de URL `lang`; el sitio web no guarda esta preferencia en cookies ni en el almacenamiento local del navegador.",
+    privacyBrowserLanguage: "Si no hay un parámetro de URL `lang` compatible, el sitio selecciona el primer idioma compatible de las preferencias de tu navegador. Esta selección se realiza localmente en el navegador y no se guarda en cookies ni en el almacenamiento local. El idioma que elijas manualmente se transmite a las páginas internas mediante el parámetro de URL `lang` y, por tanto, forma parte de la solicitud enviada a GitHub Pages.",
     privacyCookies2: "Los enlaces a GitHub y Lemon Squeezy son enlaces externos normales. El navegador contacta con el proveedor correspondiente solo cuando abres uno de esos enlaces; entonces se aplica su información de privacidad.",
     privacy4Title: "4. Compras a través de Lemon Squeezy",
     privacyCheckout1: "Si eliges Lemon Squeezy, este proporciona el proceso de compra. En sus Buyer Terms, Lemon Squeezy se describe como Merchant of Record y revendedor autorizado. El proceso de pago se abre como una página externa de Lemon Squeezy solo después de hacer clic en su enlace de compra; no está integrado en este sitio. Por tanto, la mera visita a nuestro sitio no transmite datos de compra o pago a Lemon Squeezy.",
@@ -685,10 +688,13 @@ document.querySelectorAll("[data-i18n]").forEach((element) => {
 });
 const params = new URLSearchParams(window.location.search);
 const requestedLanguage = params.get("lang");
-const browserLanguage = navigator.language.slice(0, 2).toLowerCase();
+const browserLanguages = navigator.languages?.length ? navigator.languages : [navigator.language];
+const browserLanguage = browserLanguages
+  .map((preference) => preference.split("-")[0].toLowerCase())
+  .find((preference) => supportedLanguages.includes(preference));
 let activeLanguage = supportedLanguages.includes(requestedLanguage)
   ? requestedLanguage
-  : supportedLanguages.includes(browserLanguage) ? browserLanguage : "de";
+  : browserLanguage || "de";
 
 function applyLanguage(language = activeLanguage) {
   activeLanguage = supportedLanguages.includes(language) ? language : "de";
@@ -738,7 +744,7 @@ function applyLanguage(language = activeLanguage) {
 function preserveLanguageInLinks(language) {
   document.querySelectorAll('a[href]').forEach((link) => {
     const target = new URL(link.href, window.location.href);
-    if (target.origin !== window.location.origin || !target.pathname.endsWith(".html")) return;
+    if (target.origin !== window.location.origin) return;
     target.searchParams.set("lang", language);
     link.href = target.toString();
   });

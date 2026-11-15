@@ -128,8 +128,14 @@
     }
   };
 
-  const language = new URLSearchParams(window.location.search).get("lang");
-  const selectedLanguage = Object.hasOwn(translations, language) ? language : "de";
+  const requestedLanguage = new URLSearchParams(window.location.search).get("lang");
+  const supportedLanguages = ["de", ...Object.keys(translations)];
+  const browserLanguages = navigator.languages?.length ? navigator.languages : [navigator.language];
+  const browserLanguage = browserLanguages
+    .map(language => language.split("-")[0].toLowerCase())
+    .find(language => supportedLanguages.includes(language));
+  const hasLanguageOverride = supportedLanguages.includes(requestedLanguage);
+  const selectedLanguage = hasLanguageOverride ? requestedLanguage : browserLanguage || "de";
   const dictionary = translations[selectedLanguage] || {};
   const metadata = selectedLanguage === "de"
     ? {
@@ -177,8 +183,7 @@
     languageSwitcher.value = selectedLanguage;
     languageSwitcher.addEventListener("change", () => {
       const nextURL = new URL(window.location.href);
-      if (languageSwitcher.value === "de") nextURL.searchParams.delete("lang");
-      else nextURL.searchParams.set("lang", languageSwitcher.value);
+      nextURL.searchParams.set("lang", languageSwitcher.value);
       window.location.href = nextURL.toString();
     });
   }
@@ -186,8 +191,8 @@
   for (const link of document.querySelectorAll('a[href]')) {
     const target = new URL(link.href, window.location.href);
     if (target.origin !== window.location.origin) continue;
-    if (selectedLanguage === "de") target.searchParams.delete("lang");
-    else target.searchParams.set("lang", selectedLanguage);
+    if (hasLanguageOverride || selectedLanguage !== "de") target.searchParams.set("lang", selectedLanguage);
+    else target.searchParams.delete("lang");
     link.href = target.toString();
   }
 })();
