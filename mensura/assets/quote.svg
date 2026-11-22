@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" role="img" aria-label="Angebot als PDF">
+<rect width="640" height="440" rx="18" fill="#10272a"/>
+<rect x="150" y="26" width="340" height="388" rx="8" fill="#f6faf9"/>
+<g font-family="-apple-system,Segoe UI,sans-serif" fill="#173033">
+<rect x="176" y="50" width="38" height="38" rx="8" fill="#7fe0cf"/><text x="226" y="66" font-size="14" font-weight="700">Mustermann Malerbetrieb</text><text x="226" y="84" font-size="11" fill="#5d7673">Musterstraße 1 · 12345 Musterstadt</text>
+<text x="176" y="130" font-size="20" font-weight="700">Angebot</text>
+<g font-size="12"><text x="176" y="170">Wände streichen, 44 m²</text><text x="464" y="170" text-anchor="end">352,00 €</text>
+<text x="176" y="198">Decke streichen, 19 m²</text><text x="464" y="198" text-anchor="end">171,00 €</text>
+<text x="176" y="226">Sockelleiste lackieren, 18 m</text><text x="464" y="226" text-anchor="end">72,00 €</text>
+<text x="176" y="254">Abdecken und Vorarbeiten</text><text x="464" y="254" text-anchor="end">120,00 €</text></g>
+<rect x="176" y="278" width="288" height="1.5" fill="#173033"/>
+<text x="176" y="308" font-size="12" fill="#5d7673">Netto</text><text x="464" y="308" font-size="12" text-anchor="end" fill="#5d7673">715,00 €</text>
+<text x="176" y="336" font-size="16" font-weight="700">Gesamt brutto</text><text x="464" y="336" font-size="16" font-weight="700" text-anchor="end">850,85 €</text>
+<text x="176" y="388" font-size="10" fill="#5d7673">Beispielangebot zur Illustration</text></g>
+</svg>
