@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" role="img" aria-label="Bemaßter Grundriss">
+<rect width="640" height="440" rx="18" fill="#10272a"/>
+<g stroke="#1d3d40" stroke-width="1"><path d="M40 60H600M40 120H600M40 180H600M40 240H600M40 300H600M40 360H600M100 30V410M180 30V410M260 30V410M340 30V410M420 30V410M500 30V410M580 30V410"/></g>
+<path d="M120 100H400V190H520V340H120Z" fill="rgba(127,224,207,.12)" stroke="#7fe0cf" stroke-width="6" stroke-linejoin="round"/>
+<path d="M200 100H300" stroke="#10272a" stroke-width="9"/><path d="M200 100H300" stroke="#ffd666" stroke-width="3" stroke-dasharray="2 5"/>
+<path d="M120 250V300" stroke="#10272a" stroke-width="9"/><path d="M120 250A50 50 0 0 1 170 300" fill="none" stroke="#ffd666" stroke-width="2"/>
+<path d="M520 230V290" stroke="#10272a" stroke-width="9"/><path d="M520 230V290" stroke="#ffd666" stroke-width="3" stroke-dasharray="2 5"/>
+<g fill="#f2f7f6" font-family="-apple-system,Segoe UI,sans-serif" font-size="15" text-anchor="middle">
+<text x="260" y="82">4,20 m</text><text x="460" y="172">1,80 m</text><text x="560" y="270" transform="rotate(90 560 270)">2,25 m</text><text x="320" y="364">6,00 m</text><text x="96" y="220" transform="rotate(-90 96 220)">3,60 m</text></g>
+<g stroke="#a8bfbc" stroke-width="1.5" fill="none"><path d="M120 90H400M120 84V96M400 84V96"/><path d="M120 352H520M120 346V358M520 346V358"/></g>
+<text x="300" y="268" fill="#7fe0cf" font-family="-apple-system,Segoe UI,sans-serif" font-size="30" font-weight="700" text-anchor="middle">19,1 m²</text>
+<text x="300" y="294" fill="#a8bfbc" font-family="-apple-system,Segoe UI,sans-serif" font-size="14" text-anchor="middle">Wohnen / Essen</text>
+<g font-family="-apple-system,Segoe UI,sans-serif" font-size="12" fill="#ffd666" text-anchor="middle"><text x="250" y="128">Fenster</text><text x="148" y="236">Tür</text><text x="478" y="262">Fenster</text></g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" role="img" aria-label="Materialliste mit Mengen">
+<rect width="640" height="440" rx="18" fill="#10272a"/>
+<g font-family="-apple-system,Segoe UI,sans-serif" fill="#f2f7f6">
+<text x="36" y="56" font-size="22" font-weight="700">Materialliste</text><text x="36" y="80" font-size="14" fill="#a8bfbc">Wohnen / Essen · inkl. 10 % Verschnitt</text>
+<g font-size="15"><rect x="36" y="104" width="568" height="1.5" fill="#7fe0cf"/>
+<text x="36" y="136">Wandfarbe, weiß</text><text x="604" y="136" text-anchor="end" fill="#7fe0cf">9,5 l</text>
+<text x="36" y="180">Tiefengrund</text><text x="604" y="180" text-anchor="end" fill="#7fe0cf">3,0 l</text>
+<text x="36" y="224">Vinylboden</text><text x="604" y="224" text-anchor="end" fill="#7fe0cf">21,0 m²</text>
+<text x="36" y="268">Sockelleiste</text><text x="604" y="268" text-anchor="end" fill="#7fe0cf">20 m</text>
+<text x="36" y="312">Abdeckvlies</text><text x="604" y="312" text-anchor="end" fill="#7fe0cf">21 m²</text>
+<g fill="#1d3d40"><rect x="36" y="150" width="568" height="1"/><rect x="36" y="194" width="568" height="1"/><rect x="36" y="238" width="568" height="1"/><rect x="36" y="282" width="568" height="1"/></g></g>
+<rect x="36" y="346" width="568" height="58" rx="12" fill="rgba(127,224,207,.12)" stroke="rgba(127,224,207,.4)"/>
+<text x="56" y="382" font-size="16" fill="#a8bfbc">Als PDF oder CSV teilen</text><text x="584" y="382" font-size="16" fill="#ffd666" text-anchor="end">Beispielwerte</text></g>
+</svg>
