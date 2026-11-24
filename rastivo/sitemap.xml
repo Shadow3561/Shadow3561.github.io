@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://shadow3561.github.io/rastivo/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://shadow3561.github.io/rastivo/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shadow3561.github.io/rastivo/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shadow3561.github.io/rastivo/index.html"/>
+    <lastmod>2026-11-24</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://shadow3561.github.io/rastivo/en/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://shadow3561.github.io/rastivo/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shadow3561.github.io/rastivo/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shadow3561.github.io/rastivo/index.html"/>
+    <lastmod>2026-11-24</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://shadow3561.github.io/rastivo/hilfe.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://shadow3561.github.io/rastivo/hilfe.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shadow3561.github.io/rastivo/en/help.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shadow3561.github.io/rastivo/hilfe.html"/>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shadow3561.github.io/rastivo/en/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://shadow3561.github.io/rastivo/hilfe.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shadow3561.github.io/rastivo/en/help.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shadow3561.github.io/rastivo/hilfe.html"/>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shadow3561.github.io/rastivo/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://shadow3561.github.io/rastivo/support.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shadow3561.github.io/rastivo/en/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shadow3561.github.io/rastivo/support.html"/>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://shadow3561.github.io/rastivo/en/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://shadow3561.github.io/rastivo/support.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shadow3561.github.io/rastivo/en/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shadow3561.github.io/rastivo/support.html"/>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://shadow3561.github.io/rastivo/datenschutz.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://shadow3561.github.io/rastivo/datenschutz.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shadow3561.github.io/rastivo/en/datenschutz.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shadow3561.github.io/rastivo/datenschutz.html"/>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://shadow3561.github.io/rastivo/en/datenschutz.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://shadow3561.github.io/rastivo/datenschutz.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shadow3561.github.io/rastivo/en/datenschutz.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shadow3561.github.io/rastivo/datenschutz.html"/>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://shadow3561.github.io/rastivo/impressum.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://shadow3561.github.io/rastivo/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shadow3561.github.io/rastivo/en/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shadow3561.github.io/rastivo/impressum.html"/>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://shadow3561.github.io/rastivo/en/impressum.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://shadow3561.github.io/rastivo/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shadow3561.github.io/rastivo/en/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shadow3561.github.io/rastivo/impressum.html"/>
+    <lastmod>2026-11-24</lastmod>
+    <priority>0.3</priority>
+  </url>
+</urlset>
