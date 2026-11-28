@@ -5,8 +5,8 @@
  * Reagiert auch auf den Sprachwechsel über das Auswahlmenü.
  */
 (function () {
-  var GERMAN = "https://youtu.be/CmobZ1gxGhU";
-  var ENGLISH = "https://youtu.be/rwkveaemvXw";
+  var GERMAN = "https://youtu.be/o6_5kWOYsJY";
+  var ENGLISH = "https://youtu.be/HpNlfRfgfFU";
 
   function update() {
     var lang = (document.documentElement.lang || "de").slice(0, 2).toLowerCase();
